@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="../img/logo.png">
+	<title>Jhargram Art Academy|Works</title>
+	<meta name="art" content="art,painting,puppet">
+	<meta name="description" content="An art and craft institute founded by Sanjib Mitra">
+    <meta name="keywords" content="art,painting,puppet,jhargram art academy, jhargram, sanjib mitra" />
+    <meta name="author" content="Saptak Sengupta" />
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+    <link rel="stylesheet" type="text/css" href="css/style5.css" />
+	<link rel="stylesheet" href="css/works.css" type="text/css">
+	<link rel="stylesheet" href="../css/ddmenu.css" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="js/modernizr.custom.79639.js"></script> 	
+	<link rel="stylesheet" type="text/css" href="css/event.css"/>
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.js"></script>
+	
+	<script src="js/jquery-1.7.1.min.js"></script> 
+	<script src="js/works.js" type="text/javascript" ></script>
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+	<script src="../js/ddmenu.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	window.setTimeout(function() {
+		$(document).ready(function() {
+		
+			$curtainopen = false;
+		
+			
+				
+				if ($curtainopen == false){ 
+					
+					$(".leftcurtain").stop().animate({width:'60px'}, 2000 );
+					$(".rightcurtain").stop().animate({width:'60px'},2000 );
+					$curtainopen = true;
+				}else{
+					
+					$(".leftcurtain").stop().animate({width:'50%'}, 2000 );
+					$(".rightcurtain").stop().animate({width:'51%'}, 2000 );
+					$curtainopen = false;
+				}
+
+				if ( parseInt( window.innerWidth ) > 767 ) { 
+					$("#ddmenu").fadeIn({
+						queue: true,
+						duration: 3000
+					});
+				}
+
+				return false;			
+		});	
+	},500);
+	</script>
+	<style type="text/css">
+	    *{
+	    	margin:0;
+	    	padding:0;
+	    }
+	    body {
+	    	text-align: center;
+	    	background: #4f3722 url('images/darkcurtain.jpg') repeat-x;
+	    	overflow-x: hidden;
+	    	overflow-y: scroll; 
+	    }
+	    img{
+			border: none;
+		}
+	    .leftcurtain{
+			width: 50%;
+			height: 495px;
+			top: 0px;
+			left: 0px;
+			position: absolute;
+			z-index: 2;
+		}
+		 .rightcurtain{
+			width: 51%;
+			height: 495px;
+			right: 0px;
+			top: 0px;
+			position: absolute;
+			z-index: 3;
+		}
+		.rightcurtain img, .leftcurtain img{
+			width: 100%;
+			height: 100%;
+		}
+		.logo{
+			margin: 0px auto;
+			margin-top: 150px;
+		}
+		.rope{
+			position: absolute;
+			top: -40px;
+			left: 70%;
+			z-index: 4;
+		}
+		nav {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 999;
+		}
+
+		#footer {
+		    background: rgba(96,131,65, 0.85);
+		    border: none;
+		    bottom: 0;
+		    height: 42px;
+		    left: 0;
+		    line-height: 42px;
+		    position: fixed;
+		    width: 100%;
+		    clear: both;
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		}
+
+		#footer-inner {
+			width: 300px;
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.menu-navigation-footer-container {
+			float: right;
+			width: auto;
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+
+		#siteinfo {
+			float: left;
+			width: auto;
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+
+		#ddmenu {
+			display: none;
+		}
+
+		#ddmenu ul {
+			width: 95%;
+			position: relative;
+			float: left;
+		}
+
+		@media only screen and ( max-width: 628px ) {
+			.nav-logo {
+				width: 1%;
+			}
+
+			#content {
+				margin-top: 25%;
+			}
+
+			.header {
+				max-width: 80%;
+			}
+		}
+
+		@media only screen and ( max-width: 767px ) {
+			#siteinfo {
+				width: auto;
+			}
+
+			#ddmenu {
+				display: block;
+			}
+
+			.leftcurtain, 
+			.rightcurtain {
+				display: none;
+			}
+
+			#footer {
+				position: relative;
+			}
+
+		}
+
+		@media only screen and ( min-width: 481px ) and ( max-width: 900px ) {
+			/*override the original settings*/
+		    #ddmenu ul {
+		        width: 100%;
+		        display: none;
+		        border-radius: 0;
+		         
+		    }
+
+		    .nav-logo {
+			    float: left;
+			    position: relative;
+		    }
+
+		    #ddmenu li {
+		        position: relative;
+		        display: block;
+		        font-size: 20px;
+		        width: 100%;
+		        text-align: left;
+		        border-bottom: 1px solid rgba(255,255,255,0.2);
+		    }
+			/* All the following are for the .menu-icon (pure CSS) */
+		    #ddmenu .menu-icon {
+		        font-size: 32px; /*icon size*/
+		        display: block;
+		        float: right;
+		        position: relative;
+		        width: 40px;
+		        height: 36px;
+		        text-align: center;
+		        cursor: pointer;
+		        -moz-user-select: none;
+		        -webkit-user-select: none;
+		        background-color: #EEE;
+		        border-radius: 3px;
+
+		        margin-bottom:6px;	
+		        /*align the icon to the left*/
+		        margin-left: 12px;
+		        margin-right: auto;
+		    }
+
+
+
+		    #ddmenu .menu-icon::before {
+		        content: "";
+		        position: absolute;
+		        top: 0.25em;
+		        left: 4px;
+		        width: 1em;
+		        height: 0.125em;
+		        border-top: 0.375em double rgba(100, 160, 46, 0.85);
+		        border-bottom: 0.125em solid rgba(100, 160, 46, 0.85);
+		        box-sizing: content-box;
+		    }
+
+		    #ddmenu .menu-icon-active {
+		        background-color: rgba(100, 160, 46, 0.85);
+		    }
+
+		    #ddmenu .menu-icon-active::before {
+		        border-color: #EEE;
+		    }
+		}
+
+		.logo {
+			margin: 0;
+		}
+	   
+	</style>
+</head>
+
+<body>
+	<nav id="ddmenu">
+    	<div class="menu-icon"></div>
+	    <div class="nav-logo"><img src="../img/logo.png" class = "logo"/></div>
+	    <ul>
+	        <li class="full-width">
+	            <a href="../index.html" class="top-heading" >Home</a>
+	        </li>
+	        <li class="no-sub active">
+	            <a href="#" class="top-heading">Things We Do</a>
+	        </li>
+	        <li class="full-width">
+	            <a href="../event/index.html" class="top-heading">Events</a>
+	        </li>
+	        <li class="no-sub">
+	            <a href="../mancha.html" class="top-heading">Ramkinkar Mancha</a>
+	        </li>
+	        <li class="full-width">
+	            <a href="../gallery/index.html" class="top-heading">Gallery</a>
+	        </li>
+	    </ul>
+	</nav>
+	<div class="leftcurtain"><img src="images/frontcurtain.jpg"/></div>
+	<div class="rightcurtain"><img src="images/frontcurtain.jpg"/></div>
+	<div id="content">
+
+	<div><a href="../index.html"><img src="images/header.png" class="header"/></a></div>
+	<section class="main">
+			
+		<ul class="ch-grid">
+			<li>
+				<div class="ch-item ch-img-1">				
+					<div class="ch-info-wrap">
+					<a href="javascript:toArt();">
+						<div class="ch-info">
+							<div class="ch-info-front ch-img-1"></div>
+							<div class="ch-info-back">
+								<h2>ART</h2>
+								
+							</div>
+						</div>
+					</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="ch-item ch-img-2">
+					<div class="ch-info-wrap">
+					<a href="javascript:toDance();">
+						<div class="ch-info">
+							<div class="ch-info-front ch-img-2"></div>
+							<div class="ch-info-back">
+								<h2>DANCE</h2>
+								
+							</div>
+						</div>
+					</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<div class="ch-item ch-img-3">
+					<div class="ch-info-wrap">
+						<a href="javascript:toPuppet();">
+						<div class="ch-info">
+							<div class="ch-info-front ch-img-3"></div>
+							<div class="ch-info-back">
+								<h2>PUPPET</h2>
+							</div>
+						</div>
+						</a>
+					</div>
+				</div>
+			</li>
+		</ul>
+				
+		</section>
+		<!--<a><div class="block">First Content</div></a>-->
+		
+		
+		<!----art-->
+		<section class="art">
+			<a href="javascript:void(0);" class="btn_close audio_button" style="position:fixed;">
+				<div class="over_close"></div>
+			</a>
+				    
+			<div class="content_art left">
+				<div class="art_container">
+					<a class="close_art_resp"></a>
+						
+					<h3>ART</h3>
+					<p style="color:#fff;font-size:1.5em;line-height:1;margin:0em;text-align:left;">
+						<br><br>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">ABOUT</span><br/><br/>
+									  Ever since the beginning of Jhargram Art Academy, its main focus has always been art. Art is something whose knowledge
+										is needed to pursue all kind of cultural activities. At the very beginning when Jhargram Art Academy was called Rong Tuli,
+										it was an art school teaching the youth of Jhargram various painting and art skills. Jhargram Art Academy have had students
+										in this branch ranging from the infants to the aged people. The founder of this organization, Mr. Sanjib Mitra is himself
+										an artist who has passed out from Indian College of Art and Draftsmanship and has been teaching painting to the people of Jhargram
+										ever since his stay here. He has always been a great teacher loved by all his students and have always tried to meet the 
+										craving for art within the people here.
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">COURSES</span><br/><br/>
+							  <span style="font-weight:bold;">1. Painting </span>- Painting is the most important part of Jhargram Art Academy. Painting is taught to students
+																					in various age categories to even the aged people. All kind of painting courses such as 
+																					pastel color, water color, still life, acryllic on canvas, etc. are available on the 
+																					basis of your skills and age. Facilities for examination are also available.
+							  <br/><br/>
+							  <span style="font-weight:bold;">2. Craft</span>- Craft has always been a part of the art classes. However a regular craft class
+																				has recently been started on Sundays every week. In this class varied creative things
+																				are taught such as flower making, doll making, jewellery designing, mask making and
+																				many other things that would help you decorate your house more beautifully.
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">WORKSHOPS</span><br/><br/>
+									We have been conducting workshops on art and craft for children and youths for the last 23 years in various
+									times of the year, mainly in the summer holidays as a part of our <a href="events/index.html" style="color:wheat;text-decoration:underline;">Sishu Utsav</a>
+									We have conducted workshops in different schools. Workshops for rural schools, handicapped schools and other needy schools are the main focus.
+									If any school is interested in conducting a workshop we would be glad to organize an art and craft workshop for your school.
+									Please contact us at the given phone number for conducting a workshop.
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">PHOTO GALLERY</span><br/><br/>
+							  You can view the photos of art classes <a href="../gallery/art.html" target="_blank" style="color:wheat;text-decoration:underline;">here</a>
+					</p>
+				</div>
+		    </div>
+		</section>
+		
+		<!----dance-->
+		<section class="dance">
+			<a href="javascript:void(0);" class="btn_close audio_button" style="position:fixed;">
+				<div class="over_close"></div>
+			</a>
+				    
+			<div class="content_dance left">
+				<div class="dance_container">
+					<a class="close_dance_resp"></a>
+						
+					<h3>DANCE</h3>
+					<p style="color:#fff;font-size:1.5em;line-height:1;margin:0em;text-align:left;">
+						<br><br>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">ABOUT</span><br/><br/>
+									   Since 1990, this section of Jhargram Art Academy has been continuously working in the field of dance. Though 
+										mainly Kathak is the dance form taught here but other forms of classical dances are also taught with almost 
+										equal importance. In our journey we have done dance productions such as Dance With Music, Hingsute Doitto(The Selfish Giant),
+										Alor Pakhi(The Bird of Light) and many more. It has also done dance production on the Africa poem by Rabindranath
+										Tagore with exceptional creativity. Besides teaching dance, we also have exam facilities to test a student's dancing
+										skills. Regularly, examinations on Kathak Dance, Ranbindra Nritya and other forms of dance are held.
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">COURSES</span><br/><br/>
+										The main form of dance taught here is Kathak along with Rabindra Nritya and Bharatnatyam. Facilities for examinations
+										to test the students is also available. There are weekly classes on Tuesday. To register for dance class please
+										contact with Jhargram Art Academy.
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">WORKSHOPS</span><br/><br/>
+										Dance workshops are held during the summer holidays at the time of Sishu Utsav. After extensive workshop on 
+										various dance forms, there is a dance show to showcase the result of the workshop at the end of the sishu
+										utsav.
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">PHOTO GALLERY</span><br/><br/>
+							  You can view the photos of various dance performances by the students of Jhargram Art Academy <a href="../gallery/dance.html" target="_blank" style="color:wheat;text-decoration:underline;">here</a>
+					</p>
+				</div>
+		    </div>
+		</section>
+		
+		<!----puppet-->
+		<section class="puppet">
+			<a href="javascript:void(0);" class="btn_close audio_button" style="position:fixed;">
+				<div class="over_close"></div>
+			</a>
+				    
+			<div class="content_puppet left">
+				<div class="puppet_container">
+					<a class="close_puppet_resp"></a>
+						
+					<h3>PUPPET</h3>
+					<p style="color:#fff;font-size:1.5em;line-height:1;margin:0em;text-align:left;">
+						<br><br>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">ABOUT</span><br/><br/>
+									   Today for about 30 years we have been doing works in the field of puppet.
+										The journey had started with a puppet production named Buddhiman Khorgos. In this journey,
+										we have incorporated muppet as a part of our puppet productions to enhance the magical and
+										awestrucking character of our productions. We have been continuously trying to provide happiness and
+										moral teachings through our puppet show in West Bengal and in various other states of India as well.
+										We have always tried to be innovative and new in creation and desining of puppet and other related
+										works of the puppet productions.
+										
+						<br/><br/>
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">OUR OWN PRODUCTION</span><br/><br/>
+							  <ul style="text-align: left;font-size: 20px;">
+								<li>Buddhiman Khorgos[The Wise Rabbit]</li>
+								<li>Ondhokar[Darkness]</li>
+								<li>Kabuliwala</li>
+								<li>Khude Borof Manush[The Small Iceman]</li>
+								<li>Abol Tabol( <a href="../gallery/aboltabol.html" target="_blank" style="color:wheat;text-decoration:underline;">Photos</a> )</li>
+								<li>Ektai Bol[Unity is Strength] </li>
+								<li>Bajao Basi[Play the Flute]</li>
+								<li>Kotha Kironmala( <a href="../gallery/kiranmala.html" target="_blank" style="color:wheat;text-decoration:underline;">Photos</a> )</li>
+								<li>Dak Die Ja</li>
+								<li>Tota Kahini( <a href="../gallery/totakahini.html" target="_blank" style="color:wheat;text-decoration:underline;">Photos</a> )</li>
+								<li>Sri Chaitanyalila( <a href="../gallery/chaitanya.html" target="_blank" style="color:wheat;text-decoration:underline;">Photos</a> )</li>
+								<li>Tun Tuna Tun Tun( <a href="../gallery/tuntunatuntun.html" target="_blank" style="color:wheat;text-decoration:underline;">Photos</a> )</li>
+							  </ul>
+						<br/><br/></p>
+						<p style="color:#fff;font-size:1.5em;line-height:1;margin:0em;text-align:left;">
+							  <span style="text-decoration: underline;font-weight: bold;color:#00D33E;">WORKS DONE FOR OTHER CULTURAL PERFORMERS</span><br/><br/>
+							  <ul style="text-align: left;font-size: 20px;">
+								<li>6th Commonwealth Volleyball Championship</li>
+								<li>Calcutta Choir</li>
+								<li>Dona Ganguly</li>
+								<li>Kohinoor Sen Barat - Bharat Utsav in America</li>
+								
+							  </ul>
+					</p>
+				</div>
+		    </div>
+		</section>
+		
+	</div>
+	
+	
+	<div id="footer">
+		<div id="footer-inner" class="clearfix">	
+	        
+			<div class="menu-navigation-footer-container">
+				<a href="https://www.facebook.com/profile.php?id=100004126128479" target="_blank"><img src="../img/facebook.png"/></a>
+			</div>
+		
+			<div id="siteinfo">        
+
+				© <span class="the-year">2016</span> Jhargram Art Academy
+
+			</div><!-- #siteinfo -->
+		
+	   	</div><!-- #footer-inner -->
+	</div>
+	
+</body>
+</html>

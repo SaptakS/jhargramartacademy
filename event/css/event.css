@@ -1,0 +1,31 @@
+/**Event**/
+
+/**content**/
+#content {
+	margin-top:4%;
+	color:white;
+}
+/**Block design**/
+.block{
+	height:100px;
+	width:100px;
+	border-radius:10%;
+	background:blue;
+}
+
+.ch-info-back a h2{
+	margin-top: 35%;
+	color:#fff;
+	font-size:35px;
+}
+.ch-info-back a{
+	text-decoration:none;
+}
+
+/*****************/
+
+
+/**heading**/
+.header {
+	max-width:50%;
+}

@@ -1,0 +1,208 @@
+
+.over_close{position:absolute; width:0; height:100%; top:0; left:0; background:url(../images/icon_close_over.png) center no-repeat #00D33E; transition:all 0.2s;}
+.btn_close{width:66px; height:66px; background:rgba(96,131,65, 0.85) url(../images/icon_close.png) center no-repeat; border:1px solid #00D33E; position:absolute; top:25px; right:25px; display:block; transition:all 0.4s; z-index:20000}
+.btn_close:hover .over_close{width:100%; left:0}
+
+#heading{
+
+	text-decoration: underline;font-weight: bold;color:#00D33E;
+		
+}
+
+
+
+.menu {
+	
+	margin-top:180px;
+	float: left;
+	width: 100%;
+}
+
+/*** ESSENTIAL STYLES ***/
+.sf-menu, .sf-menu * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sf-menu {
+	line-height: 1.0;
+}
+
+.sf-menu ul {
+	position: absolute;
+	top: -999em;
+	width: 10em;
+ /* left offset of submenus need to match (see below) */;
+}
+
+.sf-menu ul li {
+	width: 100%;
+}
+
+.sf-menu li:hover {
+	visibility: inherit;
+ /* fixes IE7 'sticky bug' */;
+}
+
+.sf-menu li {
+	float: left;
+	position: relative;
+}
+
+.sf-menu a {
+	display: block;
+	position: relative;
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left: 0;
+	top: 2.5em;
+ /* match top ul list item height */
+	z-index: 99;
+}
+
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top: -999em;
+}
+
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left: -10em;
+ /* match ul width */
+	top: 0;
+}
+
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top: -999em;
+}
+
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left: -10em;
+ /* match ul width */
+	top: 0;
+}
+
+/*** THEMATIC SKIN ***/
+.sf-menu {
+	float: left;
+	font-size: 25px;
+	line-height: 26px;
+	font-family: "Apercu Light", Calibri, sans-serif;
+	font-size-adjust: 0.508;
+	font-weight: 200;
+	font-style: normal; 
+}
+
+.sf-menu a {
+	padding: 4px 12px 23px;
+	text-decoration: none;
+}
+
+.ie7 .sf-menu a {
+	width: 100%;
+}
+
+.sf-menu a:link, .sf-menu a:visited {
+ /* visited pseudo selector so IE6 applies text colour*/
+	color: #ECF0F0;
+	border-bottom: 2px solid transparent;
+}
+
+.sf-menu .current-menu-item a,
+.sf-menu .current-menu-parent a,
+.sf-menu .current-menu-ancestor a,
+.sf-menu .current-post-ancestor a,
+.sf-menu .current_page_item a,
+.sf-menu .current_page_ancestor a,
+.sf-menu .current_page_parent a,
+.sf-menu ul .current_page_item a {
+	color: #fff;
+	text-shadow: 1px 0px 20px rgb(228, 147, 32);
+}
+
+.sf-menu .current-menu-item ul a,
+.sf-menu .current-menu-parent ul a,
+.sf-menu .current-menu-ancestor ul a,
+.sf-menu .current-post-ancestor ul a,
+.sf-menu .current_page_item ul a,
+.sf-menu .current_page_ancestor ul a,
+.sf-menu .current_page_parent ul a {
+	border: none;
+	color: #666;
+}
+
+.sf-menu li {
+	margin: 0 12px 0 0;
+}
+
+.sf-menu li li {
+}
+
+.sf-menu li li li {
+}
+
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	outline: 0;
+	color: #fff;
+	text-shadow: 1px 0px 20px rgb(228, 147, 32);
+}
+
+.sf-menu ul {
+	border-top: 1px transparent solid;
+}
+
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	top: 55px;
+ /* overriding essential styles */;
+}
+
+.sf-menu ul ul,
+.sf-menu ul ul ul,
+.sf-menu ul ul ul ul {
+	border-top: none;
+	border-right: 1px transparent solid;
+	margin-top: 0;
+	display: none;
+}
+
+.sf-menu ul a {
+	background: rgba(255, 255, 255, 1.0);
+	border-bottom: none;
+	padding: 6px 12px;
+}
+
+.home .sf-menu ul a {
+	background: rgba(255, 255, 255, 0.6);
+	border-bottom: none;
+	padding: 6px 12px;
+}
+
+.sf-menu ul a:hover {
+	color: #000;
+}
+
+
+/*----art---*/
+.art{position:fixed; z-index:1000; width:100%; height:100%; top:0; overflow:auto;}
+.content_art{width:100%; background:rgba(96,131,65, 0.85);min-height:100%;opacity:0.7;}
+.art_container{padding:70px; text-align:center;}
+.art_container h3{font-size: 40px; font-weight: bolder; height: 40px; padding-bottom: 2px; color: #fff; text-shadow: 1px 0px 20px rgb(228, 147, 32); margin-bottom:2px;}
+
+/*----dance---*/
+.dance{position:fixed; z-index:1000; width:100%; height:100%; top:0; overflow:auto;}
+.content_dance{width:100%; background:rgba(96,131,65, 0.85);min-height:100%;opacity:0.7;z-index:1000;}
+.dance_container{padding:70px; text-align:center;}
+.dance_container h3{font-size: 40px; font-weight: bolder; height: 40px; padding-bottom: 2px; color: #fff; text-shadow: 1px 0px 20px rgb(228, 147, 32); margin-bottom:2px;}
+
+/*----puppet---*/
+.puppet{position:fixed; z-index:1000; width:100%; height:100%; top:0; overflow:auto;}
+.content_puppet{width:100%; background:rgba(96,131,65, 0.85);min-height:100%;opacity:0.7;}
+.puppet_container{padding:70px; text-align:center;}
+.puppet_container h3{font-size: 40px; font-weight: bolder; height: 40px; padding-bottom: 2px; color: #fff; text-shadow: 1px 0px 20px rgb(228, 147, 32); margin-bottom:2px;}

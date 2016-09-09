@@ -1,0 +1,4759 @@
+.year-nav, .year-paddles {
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.year-nav {
+	max-width: 981px;
+	width: 100%;
+}
+.year-nav .year-background, .year-paddles .year-background {
+	z-index: 1
+}
+.year-nav .year-background .year-background-alt, .year-paddles .year-background .year-background-alt {
+	-webkit-transition: opacity 300ms ease;
+	-moz-transition: opacity 300ms ease;
+	transition: opacity 300ms ease
+}
+.year-nav .year-background-overlay, .year-paddles .year-background-overlay {
+	background: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+	opacity: 0.8;
+	-webkit-transition: opacity 300ms linear;
+	-moz-transition: opacity 300ms linear;
+	transition: opacity 300ms linear
+}
+.year-nav .link-content, .year-paddles .link-content {
+	font-weight: 200;
+	line-height: 1.4;
+	position: absolute;
+	top: 50%;
+	left: 2.8125em;
+	width: 19.375em;
+	height: 25em;
+	white-space: normal;
+	z-index: 4;
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+	-webkit-transform: translateY(-50%) translateZ(0);
+	-moz-transform: translateY(-50%) translateZ(0);
+	-ms-transform: translateY(-50%) translateZ(0);
+	transform: translateY(-50%) translateZ(0);
+	-webkit-transition: -webkit-transform 300ms ease, opacity 300ms ease;
+	-moz-transition: -moz-transform 300ms ease, opacity 300ms ease;
+	transition: transform 300ms ease, opacity 300ms ease
+}
+.ie7 .year-nav .link-content, .ie7 .year-paddles .link-content {
+	margin-top: -11.25em;
+	height: auto
+}
+.ie7.verbose-four .year-nav .link-content, .ie7.verbose-four .year-paddles .link-content {
+	margin-top: -14.5em
+}
+.year-nav .year, .year-paddles .year {
+	color: #fff;
+	font-size: 6.25em;
+	font-weight: 100;
+	line-height: 1.4
+}
+.year-nav .year:after, .year-paddles .year:after {
+	border-top: 1px solid #fff;
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 30px
+}
+.year-nav .caption, .year-paddles .caption {
+	font-size: 2.250em;
+	margin: .5em 0;
+	min-height: 2.4em;
+	text-align:left;
+}
+.year-nav .product, .year-paddles .product {
+	font-size: 1.6em
+}
+.year-nav .product small, .year-paddles .product small {
+	display: block;
+	font-size: .65em
+}
+.year-nav .product .mac-icon, .year-paddles .product .mac-icon {
+	font-family: 'mac-icons-simple';
+	font-style: normal;
+	font-size: 3.5em;
+	line-height: .75;
+	display: block;
+	margin: .25em auto;
+	position: relative
+}
+.year-nav {
+	background: #222;
+	border-top: 1px solid #fff;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-nav {
+	border-color: #777777
+}
+}
+.verbose .year-nav .link-content {
+	width: 22.79412em;
+	left: 3.30882em;
+	font-size: 0.85em
+}
+.verbose-four .year-nav .link-content {
+	height: 30em
+}
+.year-nav.hover-scroll ul {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.year-nav.hover-scroll li, .year-nav.hover-scroll .year-background, .year-nav.hover-scroll .year-background-overlay {
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0)
+}
+.year-nav ul {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	white-space: nowrap;
+	width: 100%;
+	height: 100%;
+	z-index: 1
+}
+.year-nav li {
+	background:#dbdbdb url(../images/loading.html) 8% 60% no-repeat;
+	color: #eee;
+	cursor: inherit;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 25em;
+	height: 100%;
+	border-left: 7px solid #000;
+	-webkit-background-size: auto 11.62791%;
+	-moz-background-size: auto 11.62791%;
+	background-size: auto 11.62791%;
+	-webkit-transition: -webkit-transform 300ms ease;
+	-moz-transition: -moz-transform 300ms ease;
+	transition: transform 300ms ease
+}
+@media only screen and (max-width: 37.5em) {
+.responsive .year-nav li {
+	border-color: #777
+}
+}
+.year-nav li.focus .year-background-overlay {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+	opacity: 0.4
+}
+.year-nav li.hover .year-background-overlay {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
+	opacity: 0.4;
+	-webkit-transition-duration: 100ms;
+	-moz-transition-duration: 100ms;
+	transition-duration: 100ms
+}
+.year-nav li.active .year-background {
+	-webkit-transition: -webkit-transform 300ms ease;
+	-moz-transition: -moz-transform 300ms ease;
+	transition: transform 300ms ease
+}
+.year-nav li.year-1984 {
+	border-left: none
+}
+.year-nav li.year-01 {
+	z-index: 0;
+	left: 0em
+}
+.year-nav li.year-02 {
+	z-index: 1;
+	left: 28em
+}
+.year-nav li.year-03 {
+	z-index: 2;
+	left: 59em
+}
+.year-nav li.year-04 {
+	z-index: 3;
+	left: 75em
+}
+.year-nav li.year-05 {
+	z-index: 4;
+	left: 100em
+}
+.year-nav li.year-06 {
+	z-index: 5;
+	left: 125em
+}
+.year-nav li.year-07 {
+	z-index: 6;
+	left: 150em
+}
+.year-nav li.year-08 {
+	z-index: 7;
+	left: 175em
+}
+.year-nav li.year-09 {
+	z-index: 8;
+	left: 200em
+}
+.year-nav li.year-10 {
+	z-index: 9;
+	left: 225em
+}
+.year-nav li.year-11 {
+	z-index: 10;
+	left: 250em
+}
+.year-nav li.year-12 {
+	z-index: 11;
+	left: 275em
+}
+.year-nav li.year-13 {
+	z-index: 12;
+	left: 300em
+}
+.year-nav li.year-14 {
+	z-index: 13;
+	left: 325em
+}
+.year-nav li.year-15 {
+	z-index: 14;
+	left: 350em
+}
+.year-nav li.year-16 {
+	z-index: 15;
+	left: 375em
+}
+.year-nav li.year-17 {
+	z-index: 16;
+	left: 400em
+}
+.year-nav li.year-18 {
+	z-index: 17;
+	left: 425em
+}
+.year-nav li.year-19 {
+	z-index: 18;
+	left: 450em
+}
+.year-nav li.year-20 {
+	z-index: 19;
+	left: 475em
+}
+.year-nav li.year-21 {
+	z-index: 20;
+	left: 500em
+}
+.year-nav li.year-22 {
+	z-index: 21;
+	left: 525em
+}
+.year-nav li.year-23 {
+	z-index: 22;
+	left: 550em
+}
+.year-nav li.year-24 {
+	z-index: 23;
+	left: 575em
+}
+.year-nav li.year-25 {
+	z-index: 24;
+	left: 600em
+}
+.year-nav li.year-26 {
+	z-index: 25;
+	left: 625em
+}
+.year-nav li.year-27 {
+	z-index: 26;
+	left: 650em
+}
+.year-nav li.year-28 {
+	z-index: 27;
+	left: 675em
+}
+.year-nav li.year-29 {
+	z-index: 28;
+	left: 700em
+}
+.year-nav li.year-30 {
+	z-index: 29;
+	left: 725em
+}
+.year-nav li.year-31 {
+	z-index: 30;
+	left: 750em
+}
+
+
+.year-nav li.year-32 {
+	z-index: 31;
+	left: 775em
+}
+
+.year-nav li.year-33 {
+	z-index: 32;
+	left: 800em
+}
+
+.year-nav li.year-34 {
+	z-index: 33;
+	left: 825em
+}
+
+.year-nav li.year-35 {
+	z-index: 33;
+	left: 850em
+}
+
+.year-nav li.year-36 {
+	z-index: 33;
+	left: 875em
+}
+
+.year-nav li.year-37 {
+	z-index: 33;
+	left: 900em
+}
+
+.year-nav li.year-38 {
+	z-index: 33;
+	left: 925em
+}
+
+.year-nav li.year-39 {
+	z-index: 33;
+	left: 950em
+}
+
+.year-nav li.year-40 {
+	z-index: 33;
+	left: 975em
+}
+
+
+
+.year-nav a {
+	color: #fff;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	cursor: pointer
+}
+.year-nav.native-scroll {
+	overflow-x: scroll;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	white-space: nowrap
+}
+.year-nav.native-scroll ul {
+	display: inline;
+	position: static
+}
+.year-nav.native-scroll .year-background-alt {
+	display: none
+}
+.year-nav.native-scroll .link-content {
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-nav.native-scroll li {
+	font-size: 0.5625em
+}
+.responsive .year-nav.native-scroll .year {
+	font-size: 8.88889em
+}
+.responsive .year-nav.native-scroll .product {
+	font-size: 1.88889em
+}
+.responsive .year-nav.native-scroll .caption {
+	font-size: 2.77778em;
+	line-height: 1.24;
+	min-height: 3.72em
+}
+}
+@media only screen and (max-width: 37.5em) {
+.responsive .year-nav.native-scroll li {
+	font-size: .32em
+}
+.responsive .year-nav.native-scroll .product {
+	font-size: 1.75em
+}
+}
+.year-nav.moving .year-background-overlay {
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	transition-duration: 1s
+}
+.year-nav.stationary li.hover .link-content {
+	-webkit-transform: translateX(25px) translateY(-50%) translateZ(0);
+	-moz-transform: translateX(25px) translateY(-50%) translateZ(0);
+	-ms-transform: translateX(25px) translateY(-50%) translateZ(0);
+	transform: translateX(25px) translateY(-50%) translateZ(0)
+}
+.year-nav.stationary li.hover, .year-nav.stationary li.before-hover {
+	-webkit-transform: translateX(-25px);
+	-moz-transform: translateX(-25px);
+	-ms-transform: translateX(-25px);
+	transform: translateX(-25px)
+}
+.year-nav.stationary li.after-hover {
+	-webkit-transform: translateX(25px);
+	-moz-transform: translateX(25px);
+	-ms-transform: translateX(25px);
+	transform: translateX(25px)
+}
+.year-nav.expanded li {
+	-webkit-transition-duration: 100ms;
+	-moz-transition-duration: 100ms;
+	transition-duration: 100ms
+}
+.year-nav.expanded li.active .year-background-overlay {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition-duration: 100ms;
+	-moz-transition-duration: 100ms;
+	transition-duration: 100ms
+}
+.year-nav.expanded li.active .year-background-alt {
+	opacity: 0
+}
+.year-nav.expanded li.active .link-content {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-paddles {
+	display: none
+}
+}
+.year-paddles a {
+	color: #222;
+	cursor: pointer;
+	outline: none;
+	position: fixed;
+	top: 0;
+	text-decoration: none;
+	width: 1px;
+	height: 100%;
+	z-index: 2001
+}
+.ie7 .year-paddles a {
+	position: absolute;
+	height: 860px;
+	top: 50px
+}
+.year-paddles .paddle-text {
+	font-weight: 200;
+	line-height: 50px;
+	margin-top: -25px;
+	padding: 0 15px;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	height: 50px;
+	cursor: pointer;
+	-webkit-transition: color 300ms ease;
+	-moz-transition: color 300ms ease;
+	transition: color 300ms ease
+}
+@media only screen and (max-width: 69.6875em) {
+.year-paddles .paddle-text {
+	-webkit-transition: opacity 150ms ease;
+	-moz-transition: opacity 150ms ease;
+	transition: opacity 150ms ease
+}
+.scroll-middle-story .year-paddles .paddle-text {
+	opacity: 0
+}
+}
+.year-paddles .paddle-text .icon, .year-paddles .paddle-text .mac-icon {
+	font-style: normal;
+	font-weight: bold;
+	position: relative
+}
+.year-paddles .paddle-text .icon {
+	font-family: '30-icons';
+	font-size: 0.9375em
+}
+.year-paddles .paddle-text .mac-icon {
+	font-family: 'mac-icons';
+	font-size: 1em
+}
+.year-paddles a:focus .paddle-text {
+	outline: auto 5px -webkit-focus-ring-color
+}
+.year-paddles a:active .paddle-text {
+	outline: none
+}
+.paddle-overlay {
+	background: #dbdbdb url(../../../images.apple.com/v/30-years/c/images/hero_background_texture.jpg) 70% 50%;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: -webkit-transform 300ms ease;
+	-moz-transition: -moz-transform 300ms ease;
+	transition: transform 300ms ease
+}
+.no-js .paddle-overlay, .touch .paddle-overlay, .ie .paddle-overlay {
+	display: none
+}
+.paddle-overlay .year-background {
+	-webkit-transition: -webkit-transform 300ms ease;
+	-moz-transition: -moz-transform 300ms ease;
+	transition: transform 300ms ease
+}
+.paddle-overlay .link-content {
+	color: #fff;
+	font-size: .6em;
+	width: 160px;
+	visibility: hidden
+}
+.verbose .paddle-overlay .link-content {
+	font-size: 0.51em
+}
+.verbose-four .paddle-overlay .link-content {
+	height: 30em
+}
+.calc .paddle-overlay .link-content {
+	visibility: visible
+}
+.tn-previous a, .tn-previous .paddle-text {
+	left: 0
+}
+.tn-previous .link-content, .verbose .tn-previous .link-content {
+	left: auto;
+	right: 10px
+}
+.tn-previous .paddle-overlay {
+	-webkit-transform: translateX(-100%);
+	-moz-transform: translateX(-100%);
+	-ms-transform: translateX(-100%);
+	transform: translateX(-100%)
+}
+.calc .can-hover .tn-previous a:hover .paddle-overlay {
+	-webkit-transform: translateX(-webkit-calc(-100% + 180px));
+	-moz-transform: translateX(-moz-calc(-100% + 180px));
+	transform: translateX(calc(-100% + 180px))
+}
+.tn-next a, .tn-next .paddle-text {
+	right: 0
+}
+.tn-next .link-content {
+	left: 10px
+}
+.tn-next .paddle-overlay {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	-ms-transform: translateX(100%);
+	transform: translateX(100%)
+}
+.calc .can-hover .tn-next a:hover .paddle-overlay {
+	-webkit-transform: translateX(-webkit-calc(100% - 180px));
+	-moz-transform: translateX(-moz-calc(100% - 180px));
+	transform: translateX(calc(100% - 180px))
+}
+body.scroll-middle-black .year-paddles .paddle-text, body.scroll-middle-image .year-paddles .paddle-text {
+	color: #fff
+}
+body.scroll-middle-black-white .year-paddles .tn-previous .paddle-text {
+	color: #fff
+}
+body.scroll-middle-white-black .year-paddles .tn-next .paddle-text {
+	color: #fff
+}
+.year-detail {
+	color: #222;
+	font-weight: 200
+}
+.year-detail h1, .year-detail h2, .year-detail h3, .year-detail h4, .year-detail h5, .year-detail h6 {
+	margin-bottom: .2em;
+	line-height: 1
+}
+.year-detail .copy {
+	color: #222;
+	font-size: 1.25em;
+	line-height: 1.6
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .copy {
+	font-size: 1.1875em;
+	line-height: 1.578
+}
+}
+.year-detail .button {
+	font-family: 'Myriad Set Pro';
+	color: #08c;
+	font-size: 1.25em;
+	border: 1px solid #08c;
+	padding: 16px 30px 15px;
+	border-radius: 5px;
+	margin-top: 30px;
+	display: inline-block
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .button {
+	padding-left: 22px;
+	padding-right: 22px
+}
+}
+.no-touch .year-detail .button:hover {
+	text-decoration: none;
+	background: #08c;
+	color: #fff;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	transition: all 200ms ease
+}
+.year-detail .row {
+	width: 100%;
+	position: relative;
+	text-align: center;
+	overflow: hidden
+}
+.year-detail .row .inner {
+	text-align: left;
+	max-width: 100%;
+	width: 980px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2
+}
+@media only screen and (max-width: 64em) and (orientation: portrait) {
+.responsive .year-detail .row .inner {
+	padding-left: 4em;
+	padding-right: 4em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .row .inner {
+	padding-left: 2em;
+	padding-right: 2em
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .row .inner {
+	padding-left: 1em;
+	padding-right: 1em
+}
+}
+.year-detail .hero {
+	color: #222;
+	padding-top: 50px;
+	height: 100%;
+	background-image: url(../../../images.apple.com/v/30-years/c/images/hero_background_texture.jpg);
+	background-color: #dbdbdb;
+	background-position: 70% 50%;
+	-webkit-background-size: auto 11.62791%;
+	-moz-background-size: auto 11.62791%;
+	background-size: auto 11.62791%;
+	padding-right: 50%
+}
+.ie7 .year-detail .hero {
+	padding: 0;
+	text-align: left;
+	height: 860px;
+	padding-right: 0
+}
+@media only screen and (max-aspect-ratio: 6 / 5) {
+.year-detail .hero {
+	padding-right: 60%
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero {
+	white-space: nowrap;
+	position: relative;
+	text-align: center;
+	padding-right: 0;
+	min-height: 450px;
+	background-position: center bottom;
+	-webkit-background-size: 7.8125% auto;
+	-moz-background-size: 7.8125% auto;
+	background-size: 7.8125% auto
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero {
+	white-space: nowrap;
+	position: relative;
+	text-align: center;
+	padding-right: 0;
+	min-height: 450px;
+	background-position: center bottom;
+	-webkit-background-size: 7.8125% auto;
+	-moz-background-size: 7.8125% auto;
+	background-size: 7.8125% auto
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero:before {
+	height: 36%;
+	display: inline-block;
+	content: '';
+	vertical-align: middle;
+	margin-right: -.3em
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 47.5em) {
+.responsive .responsive .year-detail .hero:before {
+	height: 50%
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero:before {
+	height: 36%;
+	display: inline-block;
+	content: '';
+	vertical-align: middle;
+	margin-right: -.3em
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) and (max-width: 47.5em) {
+.responsive .year-detail .hero:before {
+	height: 50%
+}
+}
+.year-detail .hero .inner {
+	text-align: left;
+	width: 50em;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5em;
+	padding-top: 0
+}
+.ie7 .year-detail .hero .inner {
+	margin: 0;
+	padding: 0;
+	width: 45%;
+	padding-top: 100px;
+	padding-left: 5em
+}
+@media only screen and (orientation: landscape), screen and (orientation: portrait) and (max-height: 1024px) {
+.year-detail .hero .inner {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero .inner {
+	top: 0;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	transform: none;
+	position: static;
+	width: auto;
+	max-width: 40em;
+	text-align: center;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero .inner {
+	top: 0;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	transform: none;
+	position: static;
+	width: auto;
+	max-width: 40em;
+	text-align: center;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	white-space: normal
+}
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-detail .hero .inner {
+	padding-left: 5em
+}
+}
+@media only screen and (max-width: 64em) and (orientation: landscape) {
+.responsive .year-detail .hero .inner {
+	position: absolute;
+	max-width: 28em
+}
+}
+@media only screen and (max-width: 64em) and (orientation: portrait) {
+.responsive .year-detail .hero .inner {
+	padding-left: 0;
+	padding-right: 0
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: landscape) {
+.responsive .year-detail .hero .inner {
+	max-width: 14em;
+	padding-left: 20px;
+	padding-right: 0
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .hero .inner {
+	margin-top: 90px;
+	padding-left: 6.5%;
+	padding-right: 6.5%
+}
+}
+.year-detail .hero .inner .year {
+	color: #222;
+	font-weight: 200;
+	font-size: 1.3125em;
+	line-height: 1.5;
+	position: relative;
+	z-index: 2
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero .inner .year {
+	width: 100%;
+	position: absolute;
+	top: 73px;
+	left: 0;
+	right: 0;
+	line-height: 1.2
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero .inner .year {
+	width: 100%;
+	position: absolute;
+	top: 73px;
+	left: 0;
+	right: 0;
+	line-height: 1.2
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .hero .inner .year {
+	font-size: 1em
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .hero .inner .year {
+	padding: 0 55px
+}
+}
+.year-detail .hero .inner .year:focus {
+	outline: none
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .hero .inner .year .separator {
+	display: block;
+	height: 0;
+	overflow: hidden
+}
+}
+.year-detail .hero .inner .headline {
+	font-size: 5.3125em;
+	font-weight: 100;
+	line-height: .95;
+	margin-left: -0.05em;
+	position: relative;
+	z-index: 2
+}
+.ie7 .year-detail .hero .inner .headline {
+	line-height: 1
+}
+@media screen and (max-height: 1280px) and (max-width: 1280px), screen and (max-height: 800px) {
+.year-detail .hero .inner .headline {
+	font-size: 3.75em
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero .inner .headline {
+	font-size: 4.75em
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero .inner .headline {
+	font-size: 4.75em
+}
+}
+@media only screen and (max-width: 64em) and (orientation: landscape) {
+.responsive .year-detail .hero .inner .headline {
+	font-size: 3.75em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .hero .inner .headline {
+	font-size: 2.375em
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: landscape) {
+.responsive .year-detail .hero .inner .headline {
+	font-size: 2em;
+	line-height: .97
+}
+}
+.year-detail .hero .inner p {
+	font-size: 1.5em;
+	line-height: 1.375;
+	padding-right: 19%
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero .inner p {
+	padding-right: 0
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero .inner p {
+	padding-right: 0
+}
+}
+@media screen and (max-height: 1280px) and (max-width: 1280px), screen and (max-height: 800px) {
+.year-detail .hero .inner p {
+	font-size: 1.125em
+}
+}
+@media only screen and (max-width: 64em) and (orientation: landscape) {
+.responsive .year-detail .hero .inner p {
+	font-size: 1.125em
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero .year-background {
+	left: 0;
+	bottom: 0;
+	width: 100%
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero .year-background {
+	left: 0;
+	bottom: 0;
+	width: 100%
+}
+}
+@media only screen and (orientation: landscape), screen and (orientation: portrait) and (max-height: 1024px) {
+.year-detail .hero.hero-two, .year-detail .hero.hero-three, .year-detail .hero.hero-hello {
+	height: auto;
+	padding-right: 0
+}
+.year-detail .hero.hero-two .inner, .year-detail .hero.hero-three .inner, .year-detail .hero.hero-hello .inner {
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	margin-top: 100px;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	position: static;
+	top: auto;
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0)
+}
+.ie7 .year-detail .hero.hero-two .inner, .ie7 .year-detail .hero.hero-three .inner, .ie7 .year-detail .hero.hero-hello .inner {
+	margin-top: 200px
+}
+.year-detail .hero.hero-two .inner p, .year-detail .hero.hero-three .inner p, .year-detail .hero.hero-hello .inner p {
+	padding-right: 0
+}
+.year-detail .hero.hero-two .year, .year-detail .hero.hero-two .headline, .year-detail .hero.hero-two .after-headline, .year-detail .hero.hero-three .year, .year-detail .hero.hero-three .headline, .year-detail .hero.hero-three .after-headline, .year-detail .hero.hero-hello .year, .year-detail .hero.hero-hello .headline, .year-detail .hero.hero-hello .after-headline {
+	opacity: 0;
+	-webkit-transition: opacity 750ms ease;
+	-moz-transition: opacity 750ms ease;
+	transition: opacity 750ms ease
+}
+.year-detail .hero.hero-two.reveal .year, .year-detail .hero.hero-two.reveal .headline, .year-detail .hero.hero-two.reveal .after-headline, .no-js .year-detail .hero.hero-two .year, .no-js .year-detail .hero.hero-two .headline, .no-js .year-detail .hero.hero-two .after-headline, .year-detail .hero.hero-three.reveal .year, .year-detail .hero.hero-three.reveal .headline, .year-detail .hero.hero-three.reveal .after-headline, .no-js .year-detail .hero.hero-three .year, .no-js .year-detail .hero.hero-three .headline, .no-js .year-detail .hero.hero-three .after-headline, .year-detail .hero.hero-hello.reveal .year, .year-detail .hero.hero-hello.reveal .headline, .year-detail .hero.hero-hello.reveal .after-headline, .no-js .year-detail .hero.hero-hello .year, .no-js .year-detail .hero.hero-hello .headline, .no-js .year-detail .hero.hero-hello .after-headline {
+	opacity: 1
+}
+.year-detail .hero.hero-two .year, .year-detail .hero.hero-three .year, .year-detail .hero.hero-hello .year {
+	width: auto;
+	-webkit-transition-delay: 400ms;
+	-moz-transition-delay: 400ms;
+	transition-delay: 400ms
+}
+.year-detail .hero.hero-two .headline, .year-detail .hero.hero-three .headline, .year-detail .hero.hero-hello .headline {
+	margin: .2em auto;
+	text-align: center;
+	width: auto;
+	-webkit-transition-delay: 600ms;
+	-moz-transition-delay: 600ms;
+	transition-delay: 600ms
+}
+.year-detail .hero.hero-two .after-headline, .year-detail .hero.hero-three .after-headline, .year-detail .hero.hero-hello .after-headline {
+	margin: 0 auto;
+	-webkit-transition-delay: 800ms;
+	-moz-transition-delay: 800ms;
+	transition-delay: 800ms
+}
+.year-detail .hero.hero-two .year-background, .year-detail .hero.hero-three .year-background, .year-detail .hero.hero-hello .year-background {
+	display: none
+}
+}
+@media only screen and (orientation: landscape) and (max-width: 64em) and (orientation: portrait), only screen and (orientation: portrait) and (max-height: 1024px) and (max-width: 64em) and (orientation: portrait) {
+.responsive .year-detail .hero.hero-two, .responsive .year-detail .hero.hero-three, .responsive .year-detail .hero.hero-hello {
+	height: 100%
+}
+.responsive .year-detail .hero.hero-two .year, .responsive .year-detail .hero.hero-two .headline, .responsive .year-detail .hero.hero-two .after-headline, .responsive .year-detail .hero.hero-three .year, .responsive .year-detail .hero.hero-three .headline, .responsive .year-detail .hero.hero-three .after-headline, .responsive .year-detail .hero.hero-hello .year, .responsive .year-detail .hero.hero-hello .headline, .responsive .year-detail .hero.hero-hello .after-headline {
+	opacity: 1;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none
+}
+.responsive .year-detail .hero.hero-two .year-background, .responsive .year-detail .hero.hero-three .year-background, .responsive .year-detail .hero.hero-hello .year-background {
+	display: block
+}
+}
+@media only screen and (orientation: landscape) and (max-width: 64em) and (orientation: portrait), only screen and (orientation: portrait) and (max-height: 1024px) and (max-width: 64em) and (orientation: portrait) {
+.responsive .year-detail .hero.hero-two .inner, .responsive .year-detail .hero.hero-three .inner, .responsive .year-detail .hero.hero-hello .inner {
+	margin-top: 0;
+	-webkit-transform: none;
+	-moz-transform: none;
+	-ms-transform: none;
+	transform: none
+}
+}
+@media only screen and (orientation: landscape) and (max-width: 47.5em), only screen and (orientation: portrait) and (max-height: 1024px) and (max-width: 47.5em) {
+.responsive .year-detail .hero.hero-two .inner, .responsive .year-detail .hero.hero-three .inner, .responsive .year-detail .hero.hero-hello .inner {
+	margin-top: 25px
+}
+}
+@media only screen and (orientation: landscape) and (max-width: 47.5em) and (orientation: portrait), only screen and (orientation: portrait) and (max-height: 1024px) and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .hero.hero-two .inner, .responsive .year-detail .hero.hero-three .inner, .responsive .year-detail .hero.hero-hello .inner {
+	margin-top: 90px
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero.hero-two .headline, .responsive .year-detail .hero.hero-three .headline, .responsive .year-detail .hero.hero-hello .headline {
+	margin-top: 0
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero.hero-two .headline, .year-detail .hero.hero-three .headline, .year-detail .hero.hero-hello .headline {
+	margin-top: 0
+}
+}
+.ie7 .year-detail .hero.hero-two, .ie7 .year-detail .hero.hero-three, .ie7 .year-detail .hero.hero-hello {
+	width: 100%;
+	text-align: center;
+	height: auto
+}
+.ie7 .year-detail .hero.hero-two .inner, .ie7 .year-detail .hero.hero-three .inner, .ie7 .year-detail .hero.hero-hello .inner {
+	width: 800px;
+	text-align: center;
+	padding-left: 0
+}
+.ie7 .year-detail .hero.hero-two .inner .year, .ie7 .year-detail .hero.hero-two .inner .after-headline, .ie7 .year-detail .hero.hero-two .inner .headline, .ie7 .year-detail .hero.hero-three .inner .year, .ie7 .year-detail .hero.hero-three .inner .after-headline, .ie7 .year-detail .hero.hero-three .inner .headline, .ie7 .year-detail .hero.hero-hello .inner .year, .ie7 .year-detail .hero.hero-hello .inner .after-headline, .ie7 .year-detail .hero.hero-hello .inner .headline {
+	width: 100%
+}
+.ie7 .year-detail .hero.hero-two .year-background, .ie7 .year-detail .hero.hero-three .year-background, .ie7 .year-detail .hero.hero-hello .year-background {
+	display: none
+}
+.year-detail .hero-image {
+	background: #dbdbdb url(../../../images.apple.com/v/30-years/c/images/hero_background_texture.jpg) 70% 50%;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0)
+}
+.ie7 .year-detail .hero-image {
+	height: 1010px
+}
+.year-detail .hero-image.move {
+	-webkit-transition: -webkit-transform 500ms ease;
+	-webkit-transition-delay: 250ms;
+	-moz-transition: -moz-transform 500ms ease 250ms;
+	transition: transform 500ms ease 250ms
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero-image {
+	display: none
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero-image {
+	display: none
+}
+}
+.year-detail .hero-text p {
+	display: none
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .hero-text p {
+	display: block;
+	font-size: 1.5em;
+	line-height: 1.526315789;
+	text-align: center;
+	padding: 0;
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .hero-text p {
+	display: block;
+	font-size: 1.5em;
+	line-height: 1.526315789;
+	text-align: center;
+	padding: 0;
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .hero-text p {
+	display: block;
+	font-size: 1.3125em;
+	line-height: 1.526315789;
+	text-align: center;
+	padding: 0;
+	margin-top: 2em;
+	margin-bottom: 2em
+}
+}
+.year-detail .milestone {
+	background-color: #000;
+	color: #fff
+}
+.year-detail .milestone figure.audio {
+	position: relative;
+	z-index: 1;
+	height: 140px;
+	width: 100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .milestone figure.audio {
+	border-bottom: 1em solid #fff
+}
+}
+.no-js .year-detail .milestone figure.audio audio, .ie7 .year-detail .milestone figure.audio audio, .no-audio .year-detail .milestone figure.audio audio {
+	display: none
+}
+.no-js .year-detail .milestone figure.audio .audio-link, .ie7 .year-detail .milestone figure.audio .audio-link, .no-audio .year-detail .milestone figure.audio .audio-link {
+	display: block;
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+	height: 100%
+}
+.year-detail .milestone figure.audio .audio-link {
+	display: none
+}
+.year-detail .milestone figure.audio .player-poster, .year-detail .milestone figure.audio .audio-player {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: opacity 500ms ease;
+	-moz-transition: opacity 500ms ease;
+	transition: opacity 500ms ease
+}
+.year-detail .milestone figure.audio .player-poster {
+	display: none;
+	z-index: 2;
+	cursor: pointer;
+	padding-top: 3.3em
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .milestone figure.audio .player-poster {
+	padding-top: 3em
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .milestone figure.audio .player-poster {
+	padding-top: 1.8em
+}
+}
+.ie7 .year-detail .milestone figure.audio .player-poster {
+	padding-top: 2em
+}
+.year-detail .milestone figure.audio .player-poster #audio-heading {
+	margin-left: .66em;
+	display: inline-block;
+	color: #fff;
+	position: relative;
+	top: 0.1em
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .milestone figure.audio .player-poster #audio-heading {
+	font-size: 1.25em;
+	margin-left: 0
+}
+}
+.year-detail .milestone figure.audio .play-button {
+	color: transparent;
+	text-indent: -100%;
+	overflow: hidden;
+	padding-top: .38em;
+	margin-bottom: -.38em;
+	line-height: 1;
+	display: inline-block;
+	cursor: pointer;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/audio_player_play.png");*/
+	background-size: 29px 29px;
+	width: 29px;
+	height: 29px;
+	background-repeat: no-repeat
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+.year-detail .milestone figure.audio .play-button {
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/audio_player_play_2x.png")*/
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .milestone figure.audio .play-button {
+	margin-bottom: 0.5em
+}
+}
+.ie7 .year-detail .milestone figure.audio .play-button {
+	display: block;
+	margin-bottom: .7em
+}
+.year-detail .milestone figure.audio .audio-player {
+	opacity: 1;
+	top: 30px
+}
+.ie7 .year-detail .milestone figure.audio .audio-player {
+	display: block
+}
+.year-detail .milestone figure.audio .audio-player .play-button {
+	padding-top: -10px;
+	margin-bottom: -10px
+}
+.year-detail .milestone figure.audio .audio-player .timeline {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	width: 70%;
+	height: 2px;
+	margin: 0 4px 4px 10px;
+	background-color: #595959
+}
+.year-detail .milestone figure.audio .audio-player .timeline:focus {
+	outline: none
+}
+.year-detail .milestone figure.audio .audio-player .timeline .played, .year-detail .milestone figure.audio .audio-player .timeline .progress, .year-detail .milestone figure.audio .audio-player .timeline .scrub {
+	position: absolute;
+	left: 0
+}
+.year-detail .milestone figure.audio .audio-player .timeline .played, .year-detail .milestone figure.audio .audio-player .timeline .progress {
+	height: 100%;
+	width: 0px;
+	top: 0;
+	left: 0
+}
+.year-detail .milestone figure.audio .audio-player .timeline .scrubbable {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2
+}
+.year-detail .milestone figure.audio .audio-player .timeline .played {
+	background-color: #FFF
+}
+.year-detail .milestone figure.audio .audio-player .timeline .progress {
+	background-color: #858585
+}
+.year-detail .milestone figure.audio .audio-player .timeline .scrub {
+	top: -10px;
+	width: 23px;
+	height: 23px;
+	border-radius: 50%;
+	background-color: #FFF;
+	cursor: pointer
+}
+.year-detail .milestone figure.audio .audio-player .time {
+	display: inline-block;
+	width: 7em;
+	margin-left: -1em
+}
+.year-detail .milestone figure.audio .audio-player .time .duration {
+	color: #595959
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .milestone figure.audio .audio-player .time {
+	margin-left: 0
+}
+}
+.year-detail .milestone figure.audio.active .audio-player .play-button {
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/audio_player_pause.png");*/
+	background-size: 29px 29px;
+	width: 29px;
+	height: 29px
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+.year-detail .milestone figure.audio.active .audio-player .play-button {
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/audio_player_pause_2x.png")*/
+}
+}
+.year-detail .milestone figure.audio.poster .player-poster {
+	display: block
+}
+.year-detail .milestone figure.audio.poster .audio-player {
+	opacity: 0
+}
+.ie7 .year-detail .milestone figure.audio.poster .audio-player {
+	display: none
+}
+.year-detail .story.row {
+	background: #fff;
+	color: #666;
+	text-align: left
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .story.row figure img {
+	padding: 0
+}
+}
+.year-detail .story.row img {
+	width: 100%;
+	height: auto;
+	vertical-align: middle
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row img {
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+}
+.year-detail .story.row .inner {
+	padding: 3.125em 0
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row .inner {
+	padding: 0
+}
+}
+.year-detail .story.row .story-section {
+	margin: 3.75em 0
+}
+.year-detail .story.row .story-section:before, .year-detail .story.row .story-section:after {
+	content: " ";
+	display: table
+}
+.year-detail .story.row .story-section:after {
+	clear: both
+}
+.ie7 .year-detail .story.row .story-section {
+	zoom: 1
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row .story-section {
+	margin: 0
+}
+}
+.year-detail .story.row .story-section figure {
+	position: relative
+}
+.year-detail .story.row .story-copy {
+	text-align: left;
+	float: left;
+	font-size: 1.25em;
+	width: 41.32653%
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row .story-copy {
+	padding: 2em 3em 1.5em;
+	width: auto;
+	float: none
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .story.row .story-copy {
+	font-size: 1.1875em;
+	padding: 1.5em 1.5em 0
+}
+}
+.year-detail .story.row .story-section-half figure {
+	background: #000;
+	float: right;
+	width: 52.85714%;
+	margin-top: 6px
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row .story-section-half figure {
+	float: none;
+	width: 100%;
+	margin-top: 0
+}
+}
+@media only screen and (min-width: 64em) and (orientation: landscape) {
+.responsive .year-detail .story.row .story-section-half figure {
+	width: 52.5%
+}
+}
+.ie7 .year-detail .story.row .story-section-half .story-video {
+	height: 291px
+}
+.year-detail .story.row .story-video {
+	background-color: #000;
+	position: relative
+}
+.ie7 .year-detail .story.row .story-video {
+	height: 551px
+}
+.year-detail .story.row .story-video:before {
+	content: "";
+	display: block;
+	padding-bottom: 57.375%;
+	width: 100%;
+	height: 0
+}
+.year-detail .story.row .story-video .video-views .moviePanel video {
+	z-index: 2;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden
+}
+.year-detail .story.row .story-video .video-views .moviePanel .controllerPanel .ACMediaControls {
+	background-color: #FFF
+}
+.ie7 .year-detail .story.row .story-video .video-views .moviePanel object, .ie7 .year-detail .story.row .story-video .video-views .moviePanel embed {
+	margin-top: 0 !important
+}
+.ie7 .year-detail .story.row .story-video .video-views .moviePanel .controllerPanel .ACMediaControls {
+	z-index: 2;
+	background-color: inherit;
+	margin-top: 0 !important;
+	background-color: transparent
+}
+.year-detail .story.row .story-video .video-views .moviePanel.mozilla .controllerPanel .ACMediaControls {
+	background-color: inherit
+}
+.year-detail .story.row .story-video .play-movie {
+	margin-top: -50px
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .story.row .story-video .play-movie {
+	margin-top: -26px
+}
+}
+.year-detail .story.row .story-quote {
+	font-size: 3.125em;
+	font-weight: 100;
+	letter-spacing: -1px;
+	line-height: 1.2;
+	padding-left: .25em;
+	text-indent: -.25em
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row .story-quote {
+	padding: 0.5em 1em 0 1.15em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .story.row .story-quote {
+	font-size: 2.125em;
+	padding: 0.94118em 0.83824em;
+	margin: 0
+}
+}
+.year-detail .story.row .story-attribution {
+	font-size: 1.25em;
+	font-weight: 200;
+	font-style: italic;
+	padding-left: 0.75em
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .story.row .story-attribution {
+	padding-left: 3em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .story.row .story-attribution {
+	font-size: 0.875em;
+	padding: 0 1.33929em 1em;
+	margin-top: -1em
+}
+}
+.year-detail .person.row {
+	background: #dbdbdb url(../images/hero_background_texture.jpg)
+}
+.year-detail .person.row .inner {
+	padding-top: 5.625em;
+	margin: 0 auto;
+	max-width: 100%;
+	text-align: center
+}
+.year-detail .person.row .after-image {
+	background: #fff
+}
+.year-detail .person.row .after-image .inner {
+	padding-top: 2em;
+	padding-bottom: 2em
+}
+.year-detail .person.row .after-image .copy {
+	margin: 0 auto
+}
+.year-detail .person.row .name, .year-detail .person.row .headline, .year-detail .person.row .copy {
+	color: #222
+}
+.year-detail .person.row .name {
+	font-size: 1.625em
+}
+.year-detail .person.row .headline {
+	font-size: 5.3125em;
+	line-height: 0.925;
+	font-weight: 100;
+	margin: .2em auto;
+	max-width: 100%;
+	width: 8.23529em
+}
+.ie7 .year-detail .person.row .headline {
+	line-height: 1
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .person.row .headline {
+	font-size: 2.5em
+}
+}
+.year-detail .person.row .copy {
+	font-size: 1.25em;
+	margin: 1.5em auto;
+	max-width: 100%;
+	width: 39em
+}
+.year-detail .features {
+	background-color: #f6f6f6;
+	color: #666
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .features {
+	padding-top: 3em
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .year-detail .features {
+	padding-top: 1.5em
+}
+}
+.year-detail .features figure {
+	padding-top: 32.5%;
+	width: 50%;
+	float: left;
+	position: relative
+}
+.ie7 .year-detail .features figure {
+	width: 49.999%
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .features figure {
+	width: 100%;
+	padding-top: 65%
+}
+}
+.year-detail .features figure img {
+	width: 100%;
+	height: auto;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.year-detail .features figure figcaption {
+	color: #666;
+	font-weight: 200;
+	z-index: 1;
+	padding: 40px 80px;
+	text-align: left;
+	max-width: 800px;
+	font-size: 1.125em;
+	line-height: 1.38889
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .features figure figcaption {
+	font-size: 1.25em;
+	line-height: 1.6;
+	padding: 10px 16px;
+	text-align: left
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .features figure figcaption {
+	font-size: 1.1875em;
+	line-height: 1.578
+}
+}
+.year-detail .features figure:nth-child(1) figcaption {
+	padding-right: 40px
+}
+.year-detail .features figure:nth-child(2) figcaption {
+	padding-left: 40px
+}
+.year-detail .features.col-3 figure {
+	width: 33.3333333333%;
+	padding-top: 21.66666666%
+}
+.ie7 .year-detail .features.col-3 figure {
+	width: 33.31%;
+	display: inline
+}
+@media only screen and (max-width: 63.9375em) and (orientation: portrait) {
+.responsive .year-detail .features.col-3 figure {
+	width: 100%;
+	padding-top: 57.375%
+}
+}
+@media screen and (max-width: 640px) {
+.html5video.responsive .year-detail .story figure .video-views {
+	width: 100%;
+	margin-bottom: -8px
+}
+.html5video.responsive .year-detail .story figure .video-views .play-movie .icon {
+	margin-top: -0.35em
+}
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .features figure, .responsive .year-detail .story figure {
+	text-align: center;
+	padding-top: 56.25%
+}
+.responsive .year-detail .features figure.video, .responsive .year-detail .story figure.video {
+	padding-top: 0
+}
+.responsive .year-detail .features figure img, .responsive .year-detail .story figure img {
+	padding: 0 7.5% 0
+}
+.responsive .year-detail .features figure .video-views, .responsive .year-detail .story figure .video-views {
+	width: 100%;
+	height: 0;
+	padding-bottom: 57.375%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.html5video .responsive .year-detail .features figure .video-views, .html5video .responsive .year-detail .story figure .video-views {
+	width: 85%
+}
+.responsive .year-detail .features figure figcaption, .responsive .year-detail .story figure figcaption {
+	display: block;
+	padding: 1em 7.5% 3em;
+	font-weight: 200;
+	color: #222;
+	position: static
+}
+}
+.year-detail .features figure.video .video-tag, .year-detail .story figure.video .video-tag {
+	display: none
+}
+.html5video .year-detail .features figure.video .video-tag, .html5video .year-detail .story figure.video .video-tag {
+	display: block
+}
+.year-detail .features figure.video .video-tag.active .video-tag-overlay, .year-detail .story figure.video .video-tag.active .video-tag-overlay {
+	display: none
+}
+.year-detail .features figure.video .video-tag.active .video-player, .year-detail .story figure.video .video-tag.active .video-player {
+	display: block
+}
+.year-detail .features figure.video .video-tag .video-player, .year-detail .features figure.video .video-tag .video-poster, .year-detail .story figure.video .video-tag .video-player, .year-detail .story figure.video .video-tag .video-poster {
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0
+}
+.year-detail .features figure.video .video-tag .video-player, .year-detail .story figure.video .video-tag .video-player {
+	display: none
+}
+.year-detail .features figure.video .video-tag .video-poster, .year-detail .story figure.video .video-tag .video-poster {
+	z-index: 2
+}
+.year-detail .features figure.video .video-tag .play-movie, .year-detail .story figure.video .video-tag .play-movie {
+	z-index: 3
+}
+.html5video .year-detail .features figure.video .gallery-view, .html5video .year-detail .story figure.video .gallery-view {
+	display: none
+}
+.year-detail .features figure.video img, .year-detail .features figure.video .moviePanel, .year-detail .story figure.video img, .year-detail .story figure.video .moviePanel {
+	width: 100% !important;
+	height: 100% !important;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+.year-detail .features figure.video .gallery-view, .year-detail .story figure.video .gallery-view {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden
+}
+.mozilla .year-detail .features figure.video .gallery-view, .mozilla .year-detail .story figure.video .gallery-view {
+	overflow: inherit
+}
+.mozilla .year-detail .features figure.video .gallery-view .mozilla.frameless .slim .ACMediaControls .mediaControllerPanel, .mozilla .year-detail .story figure.video .gallery-view .mozilla.frameless .slim .ACMediaControls .mediaControllerPanel {
+	width: 100% !important
+}
+.year-detail .features figure.video img, .year-detail .story figure.video img {
+	opacity: 0.6;
+	-webkit-transition: 0.4s opacity
+}
+.year-detail .features figure.video a:hover img, .year-detail .story figure.video a:hover img {
+	opacity: 0.8
+}
+.year-detail .features figure.video .play-movie, .year-detail .story figure.video .play-movie {
+	position: absolute;
+	color: #fff;
+	text-decoration: none;
+	top: 50%;
+	left: 50%;
+	width: 200px;
+	padding-top: 94px;
+	margin: -26px 0 0 -100px;
+	font-size: 1.5em;
+	font-weight: 200;
+	text-align: center
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .features figure.video .play-movie, .responsive .year-detail .story figure.video .play-movie {
+	color: transparent
+}
+}
+.year-detail .features figure.video .play-movie .icon, .year-detail .story figure.video .play-movie .icon {
+	font-size: 6em;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -0.3em;
+	line-height: 1em;
+	color: #fff
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .features figure.video .play-movie .icon, .responsive .year-detail .story figure.video .play-movie .icon {
+	color: #fff;
+	top: 50%;
+	top: -0.1em;
+	margin-top: -0.85em
+}
+}
+.ie .year-detail .features figure.video .video-views object, .ie .year-detail .story figure.video .video-views object {
+	position: relative;
+	z-index: 1;
+	zoom: 1
+}
+.year-detail .features figure.video video.video, .year-detail .features figure.video .ACMediaControls, .year-detail .story figure.video video.video, .year-detail .story figure.video .ACMediaControls {
+	width: auto !important;
+	height: 100% !important;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: none;
+	-moz-transition: none;
+	transition: none
+}
+.year-detail .features figure.video .quicktime, .year-detail .features figure.video .quicktime embed, .year-detail .story figure.video .quicktime, .year-detail .story figure.video .quicktime embed {
+	width: 100% !important;
+	height: 100% !important
+}
+.year-detail .features figure.video .close, .year-detail .story figure.video .close {
+	display: none
+}
+.year-detail .features figure.video.active .gallery .play-movie, .year-detail .story figure.video.active .gallery .play-movie {
+	display: none
+}
+.year-detail .features figure.video.active figcaption, .year-detail .story figure.video.active figcaption {
+	display: none
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .features figure.video.active figcaption, .responsive .year-detail .story figure.video.active figcaption {
+	display: block
+}
+}
+.year-detail .product.row {
+	background-color: #000;
+	color: #fff
+}
+.year-detail .product.row .copy {
+	color: #fff;
+	max-width: 550px;
+	margin: 0 auto
+}
+.year-detail .product.row .after-headline {
+	margin-bottom: 60px
+}
+.year-detail .product.row .inner {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	text-align: center
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .inner {
+	margin-top: 50px;
+	margin-bottom: 50px
+}
+}
+.year-detail .product.row .launched, .year-detail .product.row .uses {
+	position: relative;
+	z-index: 1
+}
+.year-detail .product.row .name {
+	font-size: 6.26em;
+	color: #fff;
+	font-weight: 100
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .name {
+	font-size: 2.5em;
+	font-weight: 100
+}
+}
+.year-detail .product.row .name small {
+	display: block;
+	font-size: .35em;
+	font-weight: 200
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .name small {
+	letter-spacing: 0.1px
+}
+}
+.year-detail .product.row .launched-year {
+	font-size: 2.125em;
+	font-weight: 200;
+	color: #fff;
+	margin-bottom: 0.65em
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .launched-year {
+	font-weight: 200;
+	font-size: 0.9375em;
+	letter-spacing: 0.1px
+}
+}
+.year-detail .product.row .launched-year:after {
+	content: "";
+	width: 30px;
+	height: 15px;
+	border-bottom: 1px solid #fff;
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	top: 8px
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .launched-year:after {
+	position: relative;
+	top: -0.3em
+}
+}
+.year-detail .product.row .mac {
+	z-index: 0;
+	position: relative
+}
+.year-detail .product.row .mac-icon {
+	color: #ccc;
+	font-family: "mac-icons";
+	font-style: normal;
+	font-size: 7em;
+	line-height: 1;
+	display: block;
+	margin-bottom: .25em
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-detail .product.row .mac-icon {
+	margin-top: 0.5em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .mac-icon {
+	font-size: 5em
+}
+}
+.year-detail .product.row .people {
+	color: #fff;
+	font-size: 3.75em;
+	font-weight: 100
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .product.row .people {
+	font-size: 2.5em;
+	max-width: 80%;
+	margin: 0 auto 0.2em
+}
+}
+.year-detail .product.row .data {
+	margin: 50px auto 0
+}
+.year-detail .product.row .more {
+	background: none;
+	padding: 0
+}
+.year-detail .product.row .more .icon {
+	font-size: .9em;
+	font-weight: bold;
+	position: relative;
+	top: .1em
+}
+.year-detail .product.row .more:hover {
+	text-decoration: none
+}
+.year-detail .product.row .more:hover span {
+	text-decoration: underline
+}
+.year-detail .product.row #graph-canvas {
+	margin: 4em auto
+}
+.year-detail .first-mac {
+	background-color: #fff
+}
+.year-detail .first-mac .inner {
+	text-align: center;
+	margin-top: 120px;
+	margin-bottom: 150px
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .first-mac .inner {
+	margin-top: 50px;
+	margin-bottom: 70px
+}
+}
+.year-detail .first-mac .tell-us {
+	color: #222;
+	font-size: 3.75em;
+	font-weight: 100
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .first-mac .tell-us {
+	font-size: 2.5em
+}
+}
+.year-detail .first-mac .copy {
+	max-width: 520px;
+	margin: 0 auto
+}
+.year-detail .thirty-share {
+	position: fixed;
+	bottom: 25px;
+	right: 30px;
+	z-index: 998
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-detail .thirty-share {
+	position: static;
+	width: 100%;
+	background: #e0e0e0;
+	display: block;
+	clear: both;
+	padding: 1em
+}
+}
+.year-detail .thirty-share a {
+	color: #fff;
+	float: left;
+	font-family: '30-icons';
+	font-size: 1.7em;
+	line-height: 1;
+	margin: 0 .3em;
+	speak: none;
+	text-decoration: none;
+	-webkit-transition: color 300ms ease;
+	-moz-transition: color 300ms ease;
+	transition: color 300ms ease
+}
+.ie7 .year-detail .thirty-share a {
+	color: #000
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-detail .thirty-share a {
+	color: #fff;
+	float: none;
+	font-size: 3em
+}
+}
+.scroll-bottom-white .year-detail .thirty-share a, .scroll-bottom-story .year-detail .thirty-share a, .year-detail .thirty-share a .scroll-bottom-black-white {
+	color: #222
+}
+@media only screen and (max-width: 64em) {
+.responsive .scroll-bottom-white .year-detail .thirty-share a, .responsive .scroll-bottom-story .year-detail .thirty-share a, .responsive .year-detail .thirty-share a .scroll-bottom-black-white {
+	color: #fff
+}
+}
+.year-detail .thirty-share .pin-single {
+	display: none
+}
+.no-js .year-detail .thirty-share .pin-select {
+	display: none
+}
+.no-js .year-detail .thirty-share .pin-single {
+	display: block
+}
+.year-detail .pin-only {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px
+}
+@media only screen and (orientation: landscape), screen and (orientation: portrait) and (max-height: 1024px) {
+.year-detail.year-1996 .hero .headline {
+	width: 47%
+}
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-detail.year-1996 .hero .headline {
+	width: auto
+}
+}
+.year-detail.white .product.row {
+	background-color: #fff;
+	color: #222
+}
+.year-detail.white .product.row .name, .year-detail.white .product.row .launched-year, .year-detail.white .product.row .people, .year-detail.white .product.row .copy {
+	color: #222
+}
+.year-detail.white .product.row .mac-icon {
+	color: #333
+}
+.year-detail.white .product.row .launched-year:after {
+	border-color: #222
+}
+.year-detail.white.year-milestone .product.row, .year-detail.white.year-features .first-mac, .year-detail.white.year-features .year-inline-paddles {
+	background-color: #f6f6f6;
+	padding-bottom: 1em
+}
+.year-detail.black section.product .more {
+	color: #8ecaff
+}
+.year-detail.black section.product .copy {
+	color: #9e9e9e;
+	font-weight: 400
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-detail.black section.product .copy {
+	color: #fff;
+	font-weight: 200
+}
+}
+.year-detail .after-image {
+	display: none
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .after-image {
+	display: block
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .after-image {
+	display: block
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .after-image {
+	display: block
+}
+}
+.year-detail .after-headline {
+	display: block
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail .after-headline {
+	display: none
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail .after-headline {
+	display: none
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail .after-headline {
+	display: none
+}
+}
+.year-inline-paddles {
+	display: none;
+	background-color: #fff
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-inline-paddles {
+	display: block;
+	height: 4.4em;
+	margin: -6.5em 4.9em 2em;
+	width: auto
+}
+.responsive .year-inline-paddles .year-inline-paddles-nav {
+	top: 0
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-inline-paddles {
+	margin: -4.4em 1.3em 0em
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: landscape) {
+.responsive .year-inline-paddles .year-inline-paddles-nav {
+	display: block
+}
+}
+.year-inline-paddles-nav {
+	display: none
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-inline-paddles-nav {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 12px;
+	right: 12px;
+	z-index: 10
+}
+}
+@media only screen and (max-width: 64em) and (orientation: portrait) {
+.responsive .year-inline-paddles-nav {
+	top: 54px
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-inline-paddles-nav {
+	font-size: 14px;
+	z-index: 10;
+	top: 54px;
+	left: 12px;
+	right: 12px
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: landscape) {
+.responsive .year-inline-paddles-nav {
+	display: none
+}
+}
+.year-inline-paddles-nav a {
+	color: #222;
+	position: absolute;
+	text-decoration: none;
+	top: 0;
+	width: auto;
+	height: 100%;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(255,255,255,0) !important
+}
+@media only screen and (min-width: 64em) {
+.no-touch .year-inline-paddles-nav a {
+	width: 1px
+}
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-inline-paddles-nav a {
+	min-height: 2.6em
+}
+}
+.ie7 .year-inline-paddles-nav a {
+	position: absolute;
+	height: 860px;
+	top: 50px
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-inline-paddles-nav .paddle-text {
+	font-weight: 200;
+	line-height: 50px;
+	margin-top: -25px;
+	padding: 0 15px;
+	width: auto;
+	height: 0;
+	width: 25%;
+	font-size: 1.3125em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-inline-paddles-nav .paddle-text {
+	font-size: 14px
+}
+}
+.year-inline-paddles-nav .paddle-text .icon {
+	position: relative;
+	bottom: -0.1em
+}
+.year-inline-paddles-nav .tn-previous a, .year-inline-paddles-nav .tn-previous .paddle-text {
+	left: 0
+}
+.year-inline-paddles-nav .tn-next a, .year-inline-paddles-nav .tn-next .paddle-text {
+	right: 0
+}
+@media only screen and (min-width: 64em) and (orientation: landscape) {
+.year-detail.year-1990 .hero {
+	padding-right: 55%
+}
+.year-detail.year-1998 .hero .inner p {
+	padding-right: 22%
+}
+.year-detail.year-1999 .hero .inner p {
+	padding-right: 22%
+}
+.year-detail.year-2000 .hero {
+	padding-right: 55%
+}
+.year-detail.year-2000 .hero .inner p {
+	padding-right: 22%
+}
+.year-detail.year-2008 .hero .inner p {
+	padding-right: 22%
+}
+.year-detail.year-2012 .hero .inner p {
+	padding-right: 22%
+}
+}
+.year-detail.year-2007 .features.col-3 figure {
+	padding-top: 50.743657%
+}
+.year-features.black .features {
+	background-color: #1a1a1a;
+	color: #fff
+}
+@media only screen and (max-width: 63.9375em) {
+.responsive .year-features.black .features {
+	background-color: #f6f6f6
+}
+}
+.year-features.black .features figcaption {
+	color: #fff
+}
+.sosumi {
+	margin: 18px auto;
+	padding: 0 20px 40px;
+	font-size: 0.85em !important
+}
+#landing .sosumi {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 10px !important;
+	text-align: left;
+	text-align: left;
+	max-width: 980px;
+	padding: 40px 0 0;
+	margin-bottom: 0px
+}
+.sosumi a {
+	color: #333
+}
+.sosumi a.movie {
+	font-weight: bold;
+	font-style: italic
+}
+.sosumi ol {
+	margin: 0;
+	padding-right: 21px;
+	padding-left: 15px
+}
+.sosumi ul {
+	margin: 0
+}
+.sosumi li {
+	padding-bottom: 5px
+}
+.sosumi p {
+	margin: 0;
+	padding-bottom: 5px
+}
+ol.sosumi {
+	width: 898px;
+	margin: 18px auto
+}
+.year-background {
+	background-repeat:no-repeat;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-background-size: auto 99.99%;
+	-moz-background-size: auto 99.99%;
+	background-size: auto 99.99%;
+	
+	
+	transform: translateX(-0px) !important;
+	-webkit-transform: translateX(0px) !important;
+}
+/*.year-background-three, .year-background-hello {
+	left: -50%
+}
+.year-background-two {
+	left: -68%
+}*/
+.ie7 .year-paddles li {
+	display: inline
+}
+.year-paddles .tn-next .year-background {
+	-webkit-transform: translateX(calc(-35% + 180px));
+	-moz-transform: translateX(calc(-35% + 180px));
+	-ms-transform: translateX(calc(-35% + 180px));
+	transform: translateX(calc(-35% + 180px))
+}
+.year-paddles .tn-next .year-background-three, .year-paddles .tn-next .year-background-hello {
+	-webkit-transform: translateX(calc(-25% + 180px));
+	-moz-transform: translateX(calc(-25% + 180px));
+	-ms-transform: translateX(calc(-25% + 180px));
+	transform: translateX(calc(-25% + 180px))
+}
+.year-paddles .tn-next .year-background-two {
+	-webkit-transform: translateX(calc(-16% + 180px));
+	-moz-transform: translateX(calc(-16% + 180px));
+	-ms-transform: translateX(calc(-16% + 180px));
+	transform: translateX(calc(-16% + 180px))
+}
+.year-paddles .tn-previous .year-background {
+	-webkit-transform: translateX(15%);
+	-moz-transform: translateX(15%);
+	-ms-transform: translateX(15%);
+	transform: translateX(15%)
+}
+.year-paddles .tn-previous .year-background-three, .year-paddles .tn-previous .year-background-hello {
+	-webkit-transform: translateX(25%);
+	-moz-transform: translateX(25%);
+	-ms-transform: translateX(25%);
+	transform: translateX(25%)
+}
+.year-paddles .tn-previous .year-background-two {
+	-webkit-transform: translateX(34%);
+	-moz-transform: translateX(34%);
+	-ms-transform: translateX(34%);
+	transform: translateX(34%)
+}
+/*.year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero_small.jpg")
+}
+}
+.year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero_small.jpg")
+}
+}
+.year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero_small.jpg")
+}
+}
+.year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero_small.jpg")
+}
+}
+.year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero_small.jpg")
+}
+}
+.year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero_small.jpg")
+}
+}
+.year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero_small.jpg")
+}
+}
+.year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero_small.jpg")
+}
+}
+.year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero_small.jpg")
+}
+}
+.year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero_small.jpg")
+}
+}
+.year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero_small.jpg")
+}
+}
+.year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero_small.jpg")
+}
+}
+.year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero_small.jpg")
+}
+}
+.year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero_small.jpg")
+}
+}
+.year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero_small.jpg")
+}
+}
+.year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero_small.jpg")
+}
+}
+.year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero_small.jpg")
+}
+}
+.year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero_small.jpg")
+}
+}
+.year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero_small.jpg")
+}
+}
+.year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero_small.jpg")
+}
+}
+.year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero_small.jpg")
+}
+}
+.year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero_small.jpg")
+}
+}
+.year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero_small.jpg")
+}
+}
+.year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero_small.jpg")
+}
+}
+.year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero_small.jpg")
+}
+}
+.year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero_small.jpg")
+}
+}
+.year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero_small.jpg")
+}
+}
+.year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero_small.jpg")
+}
+}
+.year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero_small.jpg")
+}
+}
+.year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_small.jpg")
+}
+}
+.year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background {
+	background-position: right center;
+	left: 0;
+	width: 100%
+}
+.year-nav.native-scroll .year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_cropped_small.jpg")
+}
+}
+.year-nav.native-scroll .year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero_cropped.jpg")
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-nav.native-scroll .year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero_cropped_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1984, .responsive .hero-image .year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1984, .hero-image .year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1984, .responsive .hero-image .year-background-1984 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1984/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1985, .responsive .hero-image .year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1985, .hero-image .year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1985, .responsive .hero-image .year-background-1985 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1985/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1986, .responsive .hero-image .year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1986, .hero-image .year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1986, .responsive .hero-image .year-background-1986 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1986/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1987, .responsive .hero-image .year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1987, .hero-image .year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1987, .responsive .hero-image .year-background-1987 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1987/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1988, .responsive .hero-image .year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1988, .hero-image .year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1988, .responsive .hero-image .year-background-1988 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1988/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1989, .responsive .hero-image .year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1989, .hero-image .year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1989, .responsive .hero-image .year-background-1989 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1989/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1990, .responsive .hero-image .year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1990, .hero-image .year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1990, .responsive .hero-image .year-background-1990 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1990/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1991, .responsive .hero-image .year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1991, .hero-image .year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1991, .responsive .hero-image .year-background-1991 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1991/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1992, .responsive .hero-image .year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1992, .hero-image .year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1992, .responsive .hero-image .year-background-1992 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1992/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1993, .responsive .hero-image .year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1993, .hero-image .year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1993, .responsive .hero-image .year-background-1993 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1993/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1994, .responsive .hero-image .year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1994, .hero-image .year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1994, .responsive .hero-image .year-background-1994 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1994/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1995, .responsive .hero-image .year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1995, .hero-image .year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1995, .responsive .hero-image .year-background-1995 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1995/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1996, .responsive .hero-image .year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1996, .hero-image .year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1996, .responsive .hero-image .year-background-1996 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1996/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1997, .responsive .hero-image .year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1997, .hero-image .year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1997, .responsive .hero-image .year-background-1997 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1997/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1998, .responsive .hero-image .year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1998, .hero-image .year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1998, .responsive .hero-image .year-background-1998 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1998/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-1999, .responsive .hero-image .year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-1999, .hero-image .year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-1999, .responsive .hero-image .year-background-1999 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/1999/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2000, .responsive .hero-image .year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2000, .hero-image .year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2000, .responsive .hero-image .year-background-2000 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2000/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2001, .responsive .hero-image .year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2001, .hero-image .year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2001, .responsive .hero-image .year-background-2001 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2001/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2002, .responsive .hero-image .year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2002, .hero-image .year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2002, .responsive .hero-image .year-background-2002 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2002/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2003, .responsive .hero-image .year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2003, .hero-image .year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2003, .responsive .hero-image .year-background-2003 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2003/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2004, .responsive .hero-image .year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2004, .hero-image .year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2004, .responsive .hero-image .year-background-2004 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2004/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2005, .responsive .hero-image .year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2005, .hero-image .year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2005, .responsive .hero-image .year-background-2005 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2005/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2006, .responsive .hero-image .year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2006, .hero-image .year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2006, .responsive .hero-image .year-background-2006 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2006/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2007, .responsive .hero-image .year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2007, .hero-image .year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2007, .responsive .hero-image .year-background-2007 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2007/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2008, .responsive .hero-image .year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2008, .hero-image .year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2008, .responsive .hero-image .year-background-2008 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2008/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2009, .responsive .hero-image .year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2009, .hero-image .year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2009, .responsive .hero-image .year-background-2009 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2009/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2010, .responsive .hero-image .year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2010, .hero-image .year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2010, .responsive .hero-image .year-background-2010 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2010/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2011, .responsive .hero-image .year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2011, .hero-image .year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2011, .responsive .hero-image .year-background-2011 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2011/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2012, .responsive .hero-image .year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2012, .hero-image .year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2012, .responsive .hero-image .year-background-2012 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2012/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2013, .responsive .hero-image .year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2013, .hero-image .year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2013, .responsive .hero-image .year-background-2013 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-2014, .responsive .hero-image .year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-2014, .hero-image .year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero_stacked.jpg")
+}
+}
+@media only screen and (orientation: portrait) and (max-width: 40em) {
+.responsive .hero .year-background-2014, .responsive .hero-image .year-background-2014 {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2014/hero_stacked_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background, .responsive .hero-image .year-background {
+	background-position: center bottom;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background, .hero-image .year-background {
+	background-position: center bottom;
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto
+}
+}
+@media only screen and (max-width: 64em) and (orientation: portrait) {
+.responsive .hero .year-background, .responsive .hero-image .year-background {
+	-webkit-background-size: 120% auto;
+	-moz-background-size: 120% auto;
+	background-size: 120% auto
+}
+}
+@media only screen and (max-width: 47.5em) and (orientation: portrait) {
+.responsive .hero .year-background, .responsive .hero-image .year-background {
+	-webkit-background-size: 100% auto;
+	-moz-background-size: 100% auto;
+	background-size: 100% auto
+}
+}
+.year-background-2013 .year-background-alt {
+	background: center center no-repeat;
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_single.jpg");
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%
+}
+@media only screen and (max-height: 31.5625em) {
+.responsive .year-background-2013 .year-background-alt {
+	background-image: url("http://images.apple.com/v/30-years/c/images/2013/hero_single_small.jpg")
+}
+}
+@media only screen and (orientation: portrait) {
+.responsive .hero .year-background-two, .responsive .hero .year-background-three, .responsive .hero .year-background-hello {
+	display: block
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.hero .year-background-two, .hero .year-background-three, .hero .year-background-hello {
+	display: block
+}
+}*/
+.ie7 .year-detail .year-background-one {
+	left: -25%
+}
+.year-background-1986 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-1986 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-1986 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-1986 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-1990 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-1990 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-1990 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-1990 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-1992 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-1992 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-1992 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-1992 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-1996 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-1996 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-1996 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-1996 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-1997 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-1997 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-1997 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-1997 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-2001 {
+	left: -22%
+}
+.ie7 .year-detail .year-background-2001 {
+	left: -22%
+}
+.year-paddles .tn-next .year-background-2001 {
+	-webkit-transform: translateX(calc(-39% + 180px));
+	-moz-transform: translateX(calc(-39% + 180px));
+	-ms-transform: translateX(calc(-39% + 180px));
+	transform: translateX(calc(-39% + 180px))
+}
+.year-paddles .tn-previous .year-background-2001 {
+	-webkit-transform: translateX(11%);
+	-moz-transform: translateX(11%);
+	-ms-transform: translateX(11%);
+	transform: translateX(11%)
+}
+.year-background-2004 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-2004 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-2004 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-2004 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-2008 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-2008 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-2008 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-2008 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-2009 {
+	left: -25%
+}
+.ie7 .year-detail .year-background-2009 {
+	left: -25%
+}
+.year-paddles .tn-next .year-background-2009 {
+	-webkit-transform: translateX(calc(-37.5% + 180px));
+	-moz-transform: translateX(calc(-37.5% + 180px));
+	-ms-transform: translateX(calc(-37.5% + 180px));
+	transform: translateX(calc(-37.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-2009 {
+	-webkit-transform: translateX(12.5%);
+	-moz-transform: translateX(12.5%);
+	-ms-transform: translateX(12.5%);
+	transform: translateX(12.5%)
+}
+.year-background-2014 {
+	left: -23%
+}
+.ie7 .year-detail .year-background-2014 {
+	left: -23%
+}
+.year-paddles .tn-next .year-background-2014 {
+	-webkit-transform: translateX(calc(-38.5% + 180px));
+	-moz-transform: translateX(calc(-38.5% + 180px));
+	-ms-transform: translateX(calc(-38.5% + 180px));
+	transform: translateX(calc(-38.5% + 180px))
+}
+.year-paddles .tn-previous .year-background-2014 {
+	-webkit-transform: translateX(11.5%);
+	-moz-transform: translateX(11.5%);
+	-ms-transform: translateX(11.5%);
+	transform: translateX(11.5%)
+}
+.year-detail.year-1985 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1985/product.jpg");*/
+	background-size: 1152px 1016px;
+	background-repeat: no-repeat;
+	width: 1152px;
+	height: 1016px
+}
+.responsive .year-detail.year-1985 section.product .mac {
+	width: 117.55102%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1985 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 88.19444%
+}
+.year-detail.year-1986 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1986/product.jpg");*/
+	background-size: 1109px 809px;
+	background-repeat: no-repeat;
+	width: 1109px;
+	height: 809px
+}
+.responsive .year-detail.year-1986 section.product .mac {
+	width: 113.16327%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1986 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 72.9486%
+}
+.year-detail.year-1987 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1987/product.jpg");*/
+	background-size: 1230px 1037px;
+	background-repeat: no-repeat;
+	width: 1230px;
+	height: 1037px
+}
+.responsive .year-detail.year-1987 section.product .mac {
+	width: 125.5102%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1987 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 84.30894%
+}
+.year-detail.year-1988 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1988/product.jpg");*/
+	background-size: 1109px 839px;
+	background-repeat: no-repeat;
+	width: 1109px;
+	height: 839px
+}
+.responsive .year-detail.year-1988 section.product .mac {
+	width: 113.16327%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1988 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 75.65374%
+}
+.year-detail.year-1989 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1989/product.jpg");*/
+	background-size: 1052px 909px;
+	background-repeat: no-repeat;
+	width: 1052px;
+	height: 909px
+}
+.responsive .year-detail.year-1989 section.product .mac {
+	width: 107.34694%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1989 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 86.40684%
+}
+.year-detail.year-1990 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1990/product.jpg");*/
+	background-size: 1326px 1150px;
+	background-repeat: no-repeat;
+	width: 1326px;
+	height: 1150px
+}
+.responsive .year-detail.year-1990 section.product .mac {
+	width: 135.30612%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1990 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 86.727%
+}
+.year-detail.year-1991 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1991/product.jpg");*/
+	background-size: 918px 1196px;
+	background-repeat: no-repeat;
+	width: 918px;
+	height: 1196px
+}
+.responsive .year-detail.year-1991 section.product .mac {
+	width: 93.67347%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1991 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 130.28322%
+}
+.year-detail.year-1992 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1992/product.jpg");*/
+	background-size: 1336px 1046px;
+	background-repeat: no-repeat;
+	width: 1336px;
+	height: 1046px
+}
+.responsive .year-detail.year-1992 section.product .mac {
+	width: 136.32653%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1992 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 78.29341%
+}
+.year-detail.year-1993 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1993/product.jpg");*/
+	background-size: 916px 818px;
+	background-repeat: no-repeat;
+	width: 916px;
+	height: 818px
+}
+.responsive .year-detail.year-1993 section.product .mac {
+	width: 93.46939%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1993 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 89.30131%
+}
+.year-detail.year-1994 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1994/product.jpg");*/
+	background-size: 910px 1172px;
+	background-repeat: no-repeat;
+	width: 910px;
+	height: 1172px
+}
+.responsive .year-detail.year-1994 section.product .mac {
+	width: 92.85714%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1994 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 128.79121%
+}
+.year-detail.year-1995 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1995/product.jpg");*/
+	background-size: 1532px 1096px;
+	background-repeat: no-repeat;
+	width: 1532px;
+	height: 1096px
+}
+.responsive .year-detail.year-1995 section.product .mac {
+	width: 156.32653%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1995 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 71.54047%
+}
+.year-detail.year-1996 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1996/product.jpg");*/
+	background-size: 950px 886px;
+	background-repeat: no-repeat;
+	width: 950px;
+	height: 886px
+}
+.responsive .year-detail.year-1996 section.product .mac {
+	width: 96.93878%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1996 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 93.26316%
+}
+.year-detail.year-1997 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1997/product.jpg");*/
+	background-size: 1040px 797px;
+	background-repeat: no-repeat;
+	width: 1040px;
+	height: 797px
+}
+.responsive .year-detail.year-1997 section.product .mac {
+	width: 106.12245%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1997 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 76.63462%
+}
+.year-detail.year-1998 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1998/product.jpg");*/
+	background-size: 1208px 937px;
+	background-repeat: no-repeat;
+	width: 1208px;
+	height: 937px
+}
+.responsive .year-detail.year-1998 section.product .mac {
+	width: 123.26531%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1998 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 77.56623%
+}
+.year-detail.year-1999 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/1999/product.jpg");*/
+	background-size: 932px 794px;
+	background-repeat: no-repeat;
+	width: 932px;
+	height: 794px
+}
+.responsive .year-detail.year-1999 section.product .mac {
+	width: 95.10204%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-1999 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 85.19313%
+}
+.year-detail.year-2000 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2000/product.jpg");*/
+	background-size: 887px 841px;
+	background-repeat: no-repeat;
+	width: 887px;
+	height: 841px
+}
+.responsive .year-detail.year-2000 section.product .mac {
+	width: 90.5102%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2000 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 94.81398%
+}
+.year-detail.year-2001 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2001/product.jpg");*/
+	background-size: 879px 948px;
+	background-repeat: no-repeat;
+	width: 879px;
+	height: 948px
+}
+.responsive .year-detail.year-2001 section.product .mac {
+	width: 89.69388%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2001 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 107.84983%
+}
+.year-detail.year-2002 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2002/product.jpg");*/
+	background-size: 1095px 1458px;
+	background-repeat: no-repeat;
+	width: 1095px;
+	height: 1458px
+}
+.responsive .year-detail.year-2002 section.product .mac {
+	width: 111.73469%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2002 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 133.15068%
+}
+.year-detail.year-2003 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2003/product.jpg");*/
+	background-size: 1150px 1588px;
+	background-repeat: no-repeat;
+	width: 1150px;
+	height: 1588px
+}
+.responsive .year-detail.year-2003 section.product .mac {
+	width: 117.34694%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2003 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 138.08696%
+}
+.year-detail.year-2004 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2004/product.jpg");*/
+	background-size: 927px 792px;
+	background-repeat: no-repeat;
+	width: 927px;
+	height: 792px
+}
+.responsive .year-detail.year-2004 section.product .mac {
+	width: 94.59184%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2004 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 85.43689%
+}
+.year-detail.year-2005 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2005/product.jpg");*/
+	background-size: 1276px 1122px;
+	background-repeat: no-repeat;
+	width: 1276px;
+	height: 1122px
+}
+.responsive .year-detail.year-2005 section.product .mac {
+	width: 130.20408%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2005 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 87.93103%
+}
+.year-detail.year-2006 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2006/product.jpg");*/
+	background-size: 971px 702px;
+	background-repeat: no-repeat;
+	width: 971px;
+	height: 702px
+}
+.responsive .year-detail.year-2006 section.product .mac {
+	width: 99.08163%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2006 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 72.2966%
+}
+.year-detail.year-2007 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2007/product.jpg");*/
+	background-size: 939px 1283px;
+	background-repeat: no-repeat;
+	width: 939px;
+	height: 1283px
+}
+.responsive .year-detail.year-2007 section.product .mac {
+	width: 95.81633%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2007 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 136.63472%
+}
+.year-detail.year-2008 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2008/product.jpg");*/
+	background-size: 1502px 690px;
+	background-repeat: no-repeat;
+	width: 1502px;
+	height: 690px
+}
+.responsive .year-detail.year-2008 section.product .mac {
+	width: 153.26531%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2008 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 45.93875%
+}
+.year-detail.year-2009 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2009/product.jpg");*/
+	background-size: 919px 1037px;
+	background-repeat: no-repeat;
+	width: 919px;
+	height: 1037px
+}
+.responsive .year-detail.year-2009 section.product .mac {
+	width: 93.77551%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2009 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 112.84004%
+}
+.year-detail.year-2010 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2010/product.jpg");*/
+	background-size: 1754px 585px;
+	background-repeat: no-repeat;
+	width: 1754px;
+	height: 585px
+}
+.responsive .year-detail.year-2010 section.product .mac {
+	width: 178.97959%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2010 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 33.35234%
+}
+.year-detail.year-2011 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2011/product.jpg");*/
+	background-size: 956px 695px;
+	background-repeat: no-repeat;
+	width: 956px;
+	height: 695px
+}
+.responsive .year-detail.year-2011 section.product .mac {
+	width: 97.55102%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2011 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 72.69874%
+}
+.year-detail.year-2012 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2012/product.jpg");*/
+	background-size: 983px 695px;
+	background-repeat: no-repeat;
+	width: 983px;
+	height: 695px
+}
+.responsive .year-detail.year-2012 section.product .mac {
+	width: 100.30612%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2012 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 70.70193%
+}
+.year-detail.year-2013 section.product .mac {
+	display: inline-block;
+	/*background-image: url("http://images.apple.com/v/30-years/c/images/2013/product.jpg");*/
+	background-size: 1777px 1834px;
+	background-repeat: no-repeat;
+	width: 1777px;
+	height: 1834px
+}
+.responsive .year-detail.year-2013 section.product .mac {
+	width: 181.32653%;
+	height: auto;
+	background-size: contain
+}
+.responsive .year-detail.year-2013 section.product .mac:before {
+	content: "";
+	display: block;
+	padding-bottom: 103.20765%
+}
+.year-detail.year-1985 .mac {
+	margin-bottom: -18.87755%
+}
+.year-detail.year-1985 .product .copy {
+	max-width: 550px
+}
+.year-detail.year-1986 .mac {
+	margin-top: 4.08163%;
+	margin-left: -3.06122%
+}
+.year-detail.year-1986 .product .copy {
+	max-width: 780px
+}
+.year-detail.year-1987 .mac {
+	margin-left: -28.92857%;
+	margin-bottom: -1.02041%
+}
+.year-detail.year-1987 .product .copy {
+	max-width: 740px
+}
+.year-detail.year-1988 .mac {
+	margin-left: -7.65306%;
+	margin-bottom: 5.10204%;
+	margin-top: 3.06122%
+}
+.year-detail.year-1988 .product .copy {
+	max-width: 720px
+}
+.year-detail.year-1989 .mac {
+	margin-left: -10.20408%;
+	margin-bottom: -0.5102%;
+	margin-top: 1.02041%
+}
+.year-detail.year-1989 .product .copy {
+	max-width: 740px
+}
+.year-detail.year-1990 .mac {
+	margin-left: -25.5102%;
+	margin-bottom: -14.28571%;
+	margin-top: 3.06122%
+}
+.year-detail.year-1990 .product .copy {
+	max-width: 780px
+}
+.year-detail.year-1991 .mac {
+	margin-left: 4.08163%;
+	margin-bottom: -26.53061%
+}
+.year-detail.year-1991 .product .copy {
+	max-width: 600px
+}
+.year-detail.year-1992 .mac {
+	margin-left: -10.20408%;
+	margin-bottom: -2.04082%;
+	margin-top: 1.53061%
+}
+.year-detail.year-1992 .product .copy {
+	max-width: 660px
+}
+.year-detail.year-1993 .mac {
+	margin-left: 0%;
+	margin-top: 4.08163%;
+	margin-bottom: 5.10204%
+}
+.year-detail.year-1993 .product .copy {
+	max-width: 590px
+}
+.year-detail.year-1994 .mac {
+	margin-left: 2.04082%;
+	margin-bottom: -20.40816%;
+	margin-top: 2.65306%
+}
+.year-detail.year-1994 .product .copy {
+	max-width: 640px
+}
+.year-detail.year-1995 .mac {
+	margin-left: -15.30612%;
+	margin-bottom: -10.20408%;
+	margin-top: 3.06122%
+}
+.year-detail.year-1995 .product .copy {
+	max-width: 700px
+}
+.year-detail.year-1996 .mac {
+	margin-left: 0%;
+	margin-top: 1.02041%;
+	margin-bottom: -4.08163%
+}
+.year-detail.year-1996 .product .copy {
+	max-width: 550px
+}
+.year-detail.year-1997 .mac {
+	margin-left: -8.67347%;
+	margin-bottom: 10.20408%;
+	margin-top: 2.04082%
+}
+.year-detail.year-1997 .product .copy {
+	max-width: 650px
+}
+.year-detail.year-1998 .mac {
+	margin-top: 2.04082%
+}
+.year-detail.year-1998 .product .copy {
+	max-width: 680px
+}
+.year-detail.year-1999 .mac {
+	margin-left: 0%;
+	margin-bottom: 2.04082%
+}
+.year-detail.year-1999 .product .copy {
+	max-width: 630px
+}
+.year-detail.year-2000 .mac {
+	margin-left: 1.02041%;
+	margin-bottom: -2.55102%;
+	margin-top: 1.02041%
+}
+.year-detail.year-2000 .product .copy {
+	max-width: 610px
+}
+.year-detail.year-2001 .mac {
+	margin-left: 0%;
+	margin-bottom: -24.4898%;
+	margin-top: 1.53061%
+}
+.year-detail.year-2001 .product .copy {
+	max-width: 610px
+}
+.year-detail.year-2002 .mac {
+	margin-left: -10.20408%;
+	margin-bottom: -3.06122%;
+	margin-top: 1.02041%
+}
+.year-detail.year-2002 .product .copy {
+	max-width: 620px
+}
+.year-detail.year-2003 .mac {
+	margin-left: -8.16327%
+}
+.year-detail.year-2003 .product .copy {
+	max-width: 590px
+}
+.year-detail.year-2004 .mac {
+	margin-left: 0%;
+	margin-bottom: 0%;
+	margin-top: -3.57143%
+}
+.year-detail.year-2004 .product .copy {
+	max-width: 550px
+}
+.year-detail.year-2005 .mac {
+	margin-left: -15.30612%;
+	margin-bottom: 3.06122%
+}
+.year-detail.year-2005 .product .copy {
+	max-width: 765px
+}
+.year-detail.year-2006 .mac {
+	margin-left: 0%;
+	margin-bottom: 5.10204%;
+	margin-top: 5.10204%
+}
+.year-detail.year-2006 .product .copy {
+	max-width: 645px
+}
+.year-detail.year-2007 .mac {
+	margin-left: -20.40816%;
+	margin-top: 6.12245%;
+	margin-bottom: 0%
+}
+.year-detail.year-2007 .product .copy {
+	max-width: 620px
+}
+.year-detail.year-2008 .mac {
+	margin-left: -24.4898%;
+	margin-bottom: -10.20408%
+}
+.year-detail.year-2008 .product .copy {
+	max-width: 615px
+}
+.year-detail.year-2009 .mac {
+	margin-left: 0%;
+	margin-top: -22.44898%;
+	margin-bottom: -5.10204%
+}
+.year-detail.year-2009 .product .copy {
+	max-width: 600px
+}
+.year-detail.year-2010 .mac {
+	margin-left: -42.85714%;
+	margin-bottom: 2.04082%;
+	margin-top: 4.08163%
+}
+.year-detail.year-2010 .product .copy {
+	max-width: 660px
+}
+.year-detail.year-2011 .mac {
+	margin-left: 0%;
+	margin-bottom: 0%;
+	margin-top: 1.02041%
+}
+.year-detail.year-2011 .product .copy {
+	max-width: 660px
+}
+.year-detail.year-2012 .mac {
+	margin-left: 0%;
+	margin-bottom: 2.04082%;
+	margin-top: 0.5102%
+}
+.year-detail.year-2012 .product .copy {
+	max-width: 630px
+}
+.year-detail.year-2013 .mac {
+	margin-left: -48.67347%;
+	margin-top: -20.40816%;
+	margin-bottom: -69.38776%
+}
+.year-detail.year-2013 .product .copy {
+	max-width: 640px
+}
+.year-nav .year-background-1984, .year-paddles .year-background-1984 {
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%)
+}
+.year-nav.expanded .active .year-background-1984, .segue .year-paddles .year-background-1984 {
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	filter: grayscale(0);
+	-webkit-transition-property: -webkit-transform, filter;
+	-moz-transition-property: -moz-transform, filter;
+	transition-property: transform, filter
+}
+.year-detail.year-1984, .year-detail.year-1984 .hero, .year-nav .year-1984, .year-paddles .year-1984 .paddle-overlay {
+	background: #fff
+}
+.year-detail.year-1984 .hero {
+	overflow: visible
+}
+.year-detail.year-1984 .hero .year-background-1984 {
+	-webkit-transform: translateY(5%);
+	-moz-transform: translateY(5%);
+	-ms-transform: translateY(5%);
+	transform: translateY(5%)
+}
+.year-detail.year-1984 .hero-image {
+	background: #fff
+}
+.year-detail.year-1984 .hero-image .screen {
+	background: url("../../../images.apple.com/v/30-years/c/images/1984/screen.jpg") center top no-repeat;
+	display: block;
+	opacity: 0;
+	position: absolute;
+	top: 15.15%;
+	left: 0;
+	width: 100%;
+	height: 33.66337%;
+	-webkit-background-size: auto 100%;
+	-moz-background-size: auto 100%;
+	background-size: auto 100%;
+	-webkit-transition: opacity 750ms ease;
+	-webkit-transition-delay: 250ms;
+	-moz-transition: opacity 750ms ease 250ms;
+	transition: opacity 750ms ease 250ms;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0)
+}
+.year-detail.year-1984 .hero-image.move .screen, .no-js .year-detail.year-1984 .hero-image .screen {
+	opacity: 1
+}
+.ie7 .year-detail.year-1984 .hero-image {
+	height: 1010px
+}
+.ie7 .year-detail.year-1984 .hero-image .screen {
+	opacity: 1
+}
+.year-detail.year-1984 .steve.row, .year-detail.year-1984 .team.row {
+	position: relative
+}
+.year-detail.year-1984 .steve.row img, .year-detail.year-1984 .team.row img {
+	vertical-align: middle;
+	width: 100%;
+	height: auto
+}
+.year-detail.year-1984 .steve.row .quote {
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100%;
+	height: 100%
+}
+.year-detail.year-1984 .steve.row .quote blockquote {
+	color: #fff;
+	margin: 8% 0 0 0;
+	max-width: 95%;
+	width: 56.25em;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+*vertical-align:auto;
+	zoom: 1;
+*display:inline
+}
+.ie7 .year-detail.year-1984 .steve.row .quote blockquote {
+	margin-top: 460px
+}
+.year-detail.year-1984 .steve.row .quote p {
+	font-size: 3.125em;
+	font-weight: 100;
+	line-height: 1.2;
+	margin: 0
+}
+.year-detail.year-1984 .steve.row .quote footer {
+	font-size: 1.5625em;
+	font-style: italic;
+	font-weight: 200;
+	line-height: 2.6
+}
+.year-detail.year-1984 .steve.row .quote:before {
+	content: "";
+	margin-right: -.3em;
+	height: 100%;
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: middle;
+*vertical-align:auto;
+	zoom: 1;
+*display:inline
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail.year-1984 .steve.row .quote {
+	padding: 2em 1.25em;
+	position: relative
+}
+.responsive .year-detail.year-1984 .steve.row .quote blockquote {
+	color: #222;
+	font-size: .64em;
+	margin: 0;
+	text-align: left
+}
+.responsive .year-detail.year-1984 .steve.row .quote p {
+	text-indent: -.25em
+}
+.responsive .year-detail.year-1984 .steve.row .quote:before {
+	display: none
+}
+}
+.year-detail.year-1984 .team.row {
+	background: #1a1a1a
+}
+.year-detail.year-1984 .team.row figcaption {
+	color: #fff;
+	font-size: 1.25em;
+	position: absolute;
+	left: 12.5%;
+	bottom: 6%;
+	text-align: left;
+	width: 23.125em
+}
+.year-detail.year-1984 .team.row figcaption strong {
+	color: #fff;
+	display: block;
+	font-weight: 600
+}
+@media only screen and (max-width: 64em) {
+.responsive .year-detail.year-1984 .team.row figcaption {
+	font-size: 1em
+}
+}
+@media only screen and (max-width: 47.5em) {
+.responsive .year-detail.year-1984 .team.row figcaption {
+	clear: both;
+	position: static;
+	text-align: center;
+	width: auto;
+	padding: 20px 0px;
+	max-width: 320px;
+	margin: 0 auto
+}
+}
+.year-detail.year-2014 .hero, .year-nav .year-2014, .year-paddles .year-2014 .paddle-overlay {
+	background: #000
+}
+.no-js .year-detail.year-2014 .thirty-header, .ie7 .year-detail.year-2014 .thirty-header {
+	background-color: #222;
+	color: #fff
+}
+.no-js .year-detail.year-2014 .thirty-header a, .ie7 .year-detail.year-2014 .thirty-header a {
+	color: #fff
+}
+.year-detail.year-2014 .hero .year, .year-detail.year-2014 .hero .headline {
+	color: #fff
+}
+.year-detail.year-2014 .hero p {
+	color: #858585
+}
+.year-detail.year-2014 .hero .year-inline-paddles-nav a {
+	color: #fff
+}
+.year-detail.year-2014 .mac-scroll {
+	background: #fff;
+	padding: 10em 0 6.25em 0;
+	position: relative
+}
+.year-detail.year-2014 .mac-scroll .image {
+	background: center top no-repeat;
+	display: block;
+	margin: 0 auto;
+	width: 100%
+}
+.year-detail.year-2014 .mac-scroll .mac-internal {
+	margin-top: 4.375em;
+	position: relative;
+	position: -webkit-sticky;
+	position: sticky;
+	bottom: 3.75em;
+	left: 0;
+	z-index: 1
+}
+.year-detail.year-2014 .mac-scroll .mac-internal .image {
+	font-size: 1em;
+	background-image: url("../../../images.apple.com/v/30-years/c/images/2014/mac_internal.jpg");
+	background-size: 29.625em 45.125em;
+	width: 29.625em;
+	height: 45.125em
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+.year-detail.year-2014 .mac-scroll .mac-internal .image {
+	background-image: url("../../../images.apple.com/v/30-years/c/images/2014/mac_internal_2x.jpg")
+}
+}
+.year-detail.year-2014 .mac-scroll .mac-external {
+	position: relative;
+	z-index: 3;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0)
+}
+.year-detail.year-2014 .mac-scroll .mac-external .image-top {
+	background-color: #fff;
+	font-size: 1em;
+	background-image: url("../../../images.apple.com/v/30-years/c/images/2014/mac_external.jpg");
+	background-size: 29.625em 41.6875em;
+	width: 29.625em;
+	height: 41.6875em
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+.year-detail.year-2014 .mac-scroll .mac-external .image-top {
+	background-image: url("../../../images.apple.com/v/30-years/c/images/2014/mac_external_2x.jpg")
+}
+}
+.year-detail.year-2014 .mac-scroll .mac-external .image-bottom {
+	font-size: 1em;
+	background-image: url("../../../images.apple.com/v/30-years/c/images/2014/mac_external_bottom.png");
+	background-size: 29.625em 3.6875em;
+	width: 29.625em;
+	height: 3.6875em
+}
+@media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+.year-detail.year-2014 .mac-scroll .mac-external .image-bottom {
+	background-image: url("../../../images.apple.com/v/30-years/c/images/2014/mac_external_bottom_2x.png")
+}
+}
+@media screen and (max-height: 910px) {
+.year-detail.year-2014 .mac-scroll {
+	font-size: .7em
+}
+}
+@media screen and (max-height: 680px) {
+.year-detail.year-2014 .mac-scroll {
+	font-size: .5em
+}
+}
+@media screen and (max-width: 550px) {
+.year-detail.year-2014 .mac-scroll {
+	font-size: .4em
+}
+}
+@media screen and (max-height: 450px) {
+.year-detail.year-2014 .mac-scroll {
+	font-size: .3em
+}
+}
+.year-detail.year-2014 .person.row .background {
+	background: url("../../../images.apple.com/v/30-years/c/images/2014/person.jpg") center bottom no-repeat;
+	margin: 0 auto;
+	padding-bottom: 54.59459%;
+	width: 64%;
+	height: 0;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain
+}
+@media only screen and (orientation: portrait) {
+.responsive .year-detail.year-2014 .person.row .background {
+	padding-bottom: 85.30405%;
+	width: 100%
+}
+}
+@media only screen and (orientation: portrait) and (min-height: 1024px) {
+.year-detail.year-2014 .person.row .background {
+	padding-bottom: 85.30405%;
+	width: 100%
+}
+}
+.ie7 .year-detail.year-2014 .person.row .background {
+	width: 100%;
+	height: 1010px;
+	padding-bottom: 0
+}
+.no-js .tn-previous.year-2013 a, .ie7 .tn-previous.year-2013 a {
+	color: #fff
+}
+#thirty[data-segue] .next-container {
+	display: block;
+	position: relative;
+	z-index: 1002
+}
+#thirty[data-segue] .prev-container {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1001
+}
+#thirty[data-segue="slide"] {
+	background-color: #000
+}
+#thirty[data-segue="slide"] .next-container {
+	-webkit-transition: -webkit-transform 500ms ease;
+	-moz-transition: -moz-transform 500ms ease;
+	transition: transform 500ms ease
+}
+#thirty[data-segue="slide"] .prev-container {
+	-webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
+	-webkit-transition-delay: 0s, 30ms;
+	-moz-transition: opacity 500ms ease, -moz-transform 500ms ease 30ms;
+	transition: opacity 500ms ease, transform 500ms ease 30ms
+}
+#thirty[data-segue="slide"].segue .prev-container {
+	opacity: .5
+}
+#thirty[data-segue="next"] .prev-container, #thirty[data-segue="prev"] .prev-container {
+	background-color: #000
+}
+#thirty[data-segue="next"] .prev-container .year-detail, #thirty[data-segue="prev"] .prev-container .year-detail {
+	-webkit-transition: opacity 500ms ease, -webkit-transform 500ms ease;
+	-webkit-transition-delay: 0s, 30ms;
+	-moz-transition: opacity 500ms ease, -moz-transform 500ms ease 30ms;
+	transition: opacity 500ms ease, transform 500ms ease 30ms
+}
+#thirty[data-segue="next"] .next-container, #thirty[data-segue="prev"] .next-container {
+	opacity: 0;
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0);
+	-webkit-transition: opacity 500ms ease;
+	-webkit-transition-delay: 30ms;
+	-moz-transition: opacity 500ms ease 30ms;
+	transition: opacity 500ms ease 30ms
+}
+#thirty[data-segue="next"].segue .prev-container .year-detail, #thirty[data-segue="prev"].segue .prev-container .year-detail {
+	opacity: .3
+}
+#thirty[data-segue="next"].segue .prev-container .year-detail {
+	-webkit-transform: translateX(-70%);
+	-moz-transform: translateX(-70%);
+	-ms-transform: translateX(-70%);
+	transform: translateX(-70%)
+}
+#thirty[data-segue="next"].segue .prev-container .tn-next a {
+	z-index: 2002
+}
+#thirty[data-segue="next"].segue .prev-container .tn-next .paddle-overlay, #thirty[data-segue="next"].segue .prev-container .tn-next .year-background {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	transition-duration: 500ms
+}
+#thirty[data-segue="next"].segue .prev-container .tn-next .year-background-overlay, #thirty[data-segue="next"].segue .prev-container .tn-next .link-content {
+	opacity: 0;
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	transition-duration: 500ms
+}
+#thirty[data-segue="prev"].segue .prev-container .year-detail {
+	-webkit-transform: translateX(60%);
+	-moz-transform: translateX(60%);
+	-ms-transform: translateX(60%);
+	transform: translateX(60%)
+}
+#thirty[data-segue="prev"].segue .prev-container .tn-previous a {
+	z-index: 2002
+}
+#thirty[data-segue="prev"].segue .prev-container .tn-previous .paddle-overlay, #thirty[data-segue="prev"].segue .prev-container .tn-previous .year-background {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition-duration: 500ms;
+	-moz-transition-duration: 500ms;
+	transition-duration: 500ms
+}
+#thirty[data-segue="prev"].segue .prev-container .tn-previous .year-background-overlay, #thirty[data-segue="prev"].segue .prev-container .tn-previous .link-content {
+	opacity: 0
+}
+#thirty[data-segue="open"] .next-container {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0;
+	-webkit-transition: opacity 500ms ease;
+	-moz-transition: opacity 500ms ease;
+	transition: opacity 500ms ease
+}
+#thirty[data-segue="open"].segue .next-container {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1
+}
+#thirty[data-segue="close"] .next-container {
+	z-index: 1001
+}
+#thirty[data-segue="close"] .prev-container {
+	z-index: 1002
+}
+#thirty[data-segue="close"] .prev-container {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+	opacity: 1;
+	-webkit-transition: opacity 500ms ease;
+	-moz-transition: opacity 500ms ease;
+	transition: opacity 500ms ease
+}
+#thirty[data-segue="close"].segue .prev-container {
+filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+	opacity: 0
+}
+#thirty[data-segue="fade"] {
+	background-color: #000
+}
+#thirty[data-segue="fade"] .next-container {
+	opacity: 0;
+	-webkit-transition: opacity 500ms ease;
+	-webkit-transition-delay: 30ms;
+	-moz-transition: opacity 500ms ease 30ms;
+	transition: opacity 500ms ease 30ms
+}
+#thirty[data-segue="fade"] .prev-container {
+	-webkit-transition: opacity 500ms ease;
+	-moz-transition: opacity 500ms ease;
+	transition: opacity 500ms ease
+}
+#thirty[data-segue="fade"].segue .next-container {
+	opacity: 1
+}
+#thirty[data-segue="fade"].segue .prev-container {
+	opacity: 0
+}
